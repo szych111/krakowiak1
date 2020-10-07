@@ -1,33 +1,6 @@
-
 @font-face {
     font-family: 'Museo Slab';
     src: url(../fonts/Museo_Slab_500.otf);
   }
 
-$base-font-size: 12px;
-
-@mixin  galfont {
-    font-weight: 300;
-    text-decoration: none;
-    color: #fff;
-}
-
-.galfontS {
-    font-size: $base-font-size*3;
-    @include galfont;
-}
-
-.galfontM {
-    font-size: $base-font-size*4;
-    @include galfont;
-}
-
-.galfontL {
-    font-size: $base-font-size*5;
-    @include galfont;
-}
-
-.galfontXL {
-    font-size: $base-font-size*6;
-    @include galfont;
-}
+  $base-font-size: 12px;

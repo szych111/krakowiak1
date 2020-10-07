@@ -1,0 +1,42 @@
+
+ #photogallery {
+  background-image: url(../img/kubraktylem.jpg);
+  height: 768px;
+  width: 1366px;
+  margin: 100px auto;
+}
+
+.dances {
+  max-width: 70%;
+  margin: 10%;
+}
+
+.dances a {
+  display: inline-block;
+  margin: 1rem;
+}
+
+@mixin galfont { 
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.galfontS {
+    font-size: 36px;
+    @include galfont;
+  }
+  
+  .galfontM {
+    font-size: 48px;
+    @include galfont;
+  }
+  
+  .galfontL {
+    font-size: 60px;
+    @include galfont;
+  }
+  
+  .galfontXL {
+    font-size: 72px;
+    @include galfont;
+  }

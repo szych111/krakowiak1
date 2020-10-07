@@ -1,0 +1,10 @@
+$basebeige-background-color: rgb(201, 191, 143);
+$basegrey-background-color: #3a3838ef;
+
+@mixin column {
+        background-color: $basebeige-background-color;
+        opacity: 0.8;
+        flex-basis: 35%;
+        margin: 50px;
+        padding: 20px;
+}

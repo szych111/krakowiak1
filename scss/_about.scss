@@ -1,0 +1,12 @@
+#about {
+    background-image: url(../img/grupowe.jpg);
+    height: 768px;
+    width: 1366px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .col {
+    @include column;
+  }

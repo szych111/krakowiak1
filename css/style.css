@@ -1,35 +1,83 @@
-@charset "UTF-8";
+body {
+  color: #fff;
+  font-family: 'Museo Slab';
+  background-color: #3a3838;
+  margin-top: 0;
+}
+
+h2 {
+  text-align: right;
+  margin: 1rem;
+}
+
 @font-face {
   font-family: 'Museo Slab';
   src: url(../fonts/Museo_Slab_500.otf);
 }
 
-.galfontS {
-  font-size: 36px;
-  font-weight: 300;
-  text-decoration: none;
-  color: #fff;
+#main {
+  background-image: url(../img/main-yellow.jpg);
+  height: 768px;
+  width: 1366px;
+  margin: 0px auto 100px;
+  position: relative;
 }
 
-.galfontM {
-  font-size: 48px;
-  font-weight: 300;
-  text-decoration: none;
-  color: #fff;
+h1 {
+  font-size: 200px;
+  font-weight: 700;
+  font-stretch: expanded;
+  text-align: center;
 }
 
-.galfontL {
-  font-size: 60px;
-  font-weight: 300;
-  text-decoration: none;
-  color: #fff;
+.main-header-holder {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 100px;
 }
 
-.galfontXL {
-  font-size: 72px;
-  font-weight: 300;
-  text-decoration: none;
-  color: #fff;
+.main-header-holder h1 {
+  margin: 0;
+}
+
+.fa {
+  display: block;
+  position: absolute;
+  left: 40px;
+  top: 10px;
+  font-size: 24px;
+}
+
+.choose-language {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 24px;
+}
+
+#about {
+  background-image: url(../img/grupowe.jpg);
+  height: 768px;
+  width: 1366px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  background-color: #c9bf8f;
+  opacity: 0.8;
+  flex-basis: 35%;
+  margin: 50px;
+  padding: 20px;
+}
+
+#photogallery {
+  background-image: url(../img/kubraktylem.jpg);
+  height: 768px;
+  width: 1366px;
+  margin: 100px auto;
 }
 
 .dances {
@@ -42,175 +90,35 @@
   margin: 1rem;
 }
 
-.galeria1 {
-  position: absolute;
-  top: 2000px;
-  left: 550;
-  right: 150;
-  bottom: 0;
-  /* width: 100%;
-    height: 100px; */
-  margin: auto;
-  display: block;
-}
-
-.galeria2 {
-  position: absolute;
-  top: 1850px;
-  left: 750px;
-  right: 0;
-  bottom: 0;
-  /* width: 100%;
-    height: 100px; */
-  margin: auto;
-  display: block;
-}
-
-.galeria1 span {
-  position: relative;
-  top: 20px;
-  display: inline-block;
-  -webkit-animation: bounce 0.3s ease infinite alternate;
-  font-size: 80px;
-  color: #fff;
-}
-
-/* div {
-    -webkit-animation: bounce 0.3s ease infinite alternate;
-  } */
-div span:nth-child(2) {
-  -webkit-animation-delay: 0.1s;
-}
-
-div span:nth-child(3) {
-  -webkit-animation-delay: 0.2s;
-}
-
-div span:nth-child(4) {
-  -webkit-animation-delay: 0.3s;
-}
-
-div span:nth-child(5) {
-  -webkit-animation-delay: 0.4s;
-}
-
-div span:nth-child(6) {
-  -webkit-animation-delay: 0.5s;
-}
-
-div span:nth-child(7) {
-  -webkit-animation-delay: 0.6s;
-}
-
-div span:nth-child(8) {
-  -webkit-animation-delay: 0.2s;
-}
-
-div span:nth-child(9) {
-  -webkit-animation-delay: 0.3s;
-}
-
-div span:nth-child(10) {
-  -webkit-animation-delay: 0.4s;
-}
-
-div span:nth-child(11) {
-  -webkit-animation-delay: 0.5s;
-}
-
-div span:nth-child(12) {
-  -webkit-animation-delay: 0.6s;
-}
-
-div span:nth-child(13) {
-  -webkit-animation-delay: 0.7s;
-}
-
-div span:nth-child(14) {
-  -webkit-animation-delay: 0.8s;
-}
-
-/* ANIMATION */
-
-.fa {
-  display: block;
-  position: absolute;
-  left: 40px;
-  top: 10px;
-  font-size: 24px;
-}
-
-.language {
-  position: absolute;
-  right: 20px;
-  top: 10px;
-  font-size: 24px;
-}
-
-#main h1 {
-  top: 100px;
-  text-align: left;
-  margin-left: 12%;
-}
-
-#main h1::after {
-  content: 'Zespół Pieśni i Tańca';
+.galfontS {
   font-size: 36px;
-  display: block;
-  margin-top: -20px;
-}
-
-body {
-  color: #fff;
-  font-family: 'Museo Slab';
-  background-color: #3a3838;
-  margin-top: 0;
-}
-
-h1 {
-  font-size: 200px;
-  font-weight: 700;
-  font-stretch: expanded;
-  text-align: center;
-}
-
-div#main {
-  background-image: url(../img/main-yellow.jpg);
-  height: 768px;
-  width: 1366px;
-  margin: 0px auto 100px;
-  position: relative;
-}
-
-div#about {
-  background-image: url(../img/grupowe.jpg);
-  height: 768px;
-  width: 1366px;
-  margin: 100px auto;
-  display: flex;
-  flex-direction: row;
-}
-
-.col {
-  background-color: rgba(201, 191, 143, 0.8);
-  flex-basis: 35%;
-  margin: 50px;
-  padding: 20px;
-}
-
-div#photogallery {
-  background-image: url(../img/kubraktylem.jpg);
-  height: 768px;
-  width: 1366px;
-  margin: 100px auto;
-}
-
-div#photogallery a {
+  font-weight: 900;
   text-decoration: none;
   color: #fff;
 }
 
-div#contact {
+.galfontM {
+  font-size: 48px;
+  font-weight: 900;
+  text-decoration: none;
+  color: #fff;
+}
+
+.galfontL {
+  font-size: 60px;
+  font-weight: 900;
+  text-decoration: none;
+  color: #fff;
+}
+
+.galfontXL {
+  font-size: 72px;
+  font-weight: 900;
+  text-decoration: none;
+  color: #fff;
+}
+
+#contact {
   background-image: url(../img/dwieparywpodskoku.jpg);
   height: 768px;
   width: 1366px;
@@ -219,11 +127,11 @@ div#contact {
   flex-direction: row;
 }
 
-div#contact .col {
+#contact .col {
   text-align: center;
 }
 
-div#contact p {
+#contact p {
   margin-top: 20px;
 }
 
