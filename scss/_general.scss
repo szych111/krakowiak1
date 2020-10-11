@@ -2,11 +2,51 @@ body {
     color: #fff;
     font-family: 'Museo Slab';
     background-color: $basegrey-background-color;
-    margin-top: 0;
+    margin: 0;
+    box-sizing: border-box;
   }
 
+  #about, #photogallery, #contact {
+    height: 768px;
+    width: 1366px;
+    margin: 50px auto;      
+}
+
+.section-header-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 10px 20px;
+
   h2 {
-      font-size: $base-font-size * 3;
-    text-align: right;
-      margin: 1rem;
+    font-size: 50px;
+    right: 20px;
+    top: 10px;
+    margin-top: 0;
   }
+}
+    .k-menu {
+    padding-top: 20px;
+  }
+
+  .container {
+    display: flex;
+    max-width: 75%;
+    padding-top: 90px;
+    justify-content: space-between;
+  }
+
+  .col {
+    background-color: $basebeige-background-color;
+    opacity: 0.75;
+    flex-basis: 45%;
+    margin: 10px 15px;
+    padding: 20px;
+    font-size: 16px;
+
+    :hover {
+      transform: scale(1.5);
+      background-color: $basegrey-background-color;
+      
+    }
+}

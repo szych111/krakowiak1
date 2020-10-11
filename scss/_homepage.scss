@@ -4,24 +4,7 @@
     width: 1366px;
     margin: 0px auto 100px;
     position: relative;
-  }
-
-h1 {
-    font-size: 200px;
-    font-weight: 700;
-    font-stretch: expanded;
     text-align: center;
-  }
-
-.main-header-holder {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 100px;
-  }
-  
-  .main-header-holder h1 {
-    margin: 0;
   }
 
   .fa {
@@ -29,12 +12,38 @@ h1 {
     position: absolute;
     left: 40px;
     top: 10px;
-    font-size: 24px;
+    font-size: 40px;
   }
   
   .choose-language {
     position: absolute;
     right: 20px;
-    top: 10px;
+    top: 20px;
     font-size: 24px;
   }
+
+.main-header-holder {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 180px;
+
+    h1 {
+      font-size: 200px;
+      font-weight: 700;
+      font-stretch: expanded;
+      text-align: center;
+      margin-top: -50px;
+      margin-bottom: -10px;
+      padding-bottom: 0;
+    }
+
+    h2 {
+      font-size: 40px;
+      margin-top: -30px;
+      padding-top: 0;
+      text-align: left;
+    }
+  }
+
+  

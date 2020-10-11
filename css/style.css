@@ -1,13 +1,54 @@
 body {
   color: #fff;
   font-family: 'Museo Slab';
-  background-color: #3a3838;
+  background-color: #3a3838ef;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#about, #photogallery, #contact {
+  height: 768px;
+  width: 1366px;
+  margin: 50px auto;
+}
+
+.section-header-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 10px 20px;
+}
+
+.section-header-holder h2 {
+  font-size: 50px;
+  right: 20px;
+  top: 10px;
   margin-top: 0;
 }
 
-h2 {
-  text-align: right;
-  margin: 1rem;
+.k-menu {
+  padding-top: 20px;
+}
+
+.container {
+  display: flex;
+  max-width: 75%;
+  padding-top: 90px;
+  justify-content: space-between;
+}
+
+.col {
+  background-color: #c9bf8f;
+  opacity: 0.75;
+  flex-basis: 45%;
+  margin: 10px 15px;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.col :hover {
+  transform: scale(1.5);
+  background-color: #3a3838ef;
 }
 
 @font-face {
@@ -21,24 +62,7 @@ h2 {
   width: 1366px;
   margin: 0px auto 100px;
   position: relative;
-}
-
-h1 {
-  font-size: 200px;
-  font-weight: 700;
-  font-stretch: expanded;
   text-align: center;
-}
-
-.main-header-holder {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 100px;
-}
-
-.main-header-holder h1 {
-  margin: 0;
 }
 
 .fa {
@@ -46,85 +70,85 @@ h1 {
   position: absolute;
   left: 40px;
   top: 10px;
-  font-size: 24px;
+  font-size: 40px;
 }
 
 .choose-language {
   position: absolute;
   right: 20px;
-  top: 10px;
+  top: 20px;
   font-size: 24px;
+}
+
+.main-header-holder {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 180px;
+}
+
+.main-header-holder h1 {
+  font-size: 200px;
+  font-weight: 700;
+  font-stretch: expanded;
+  text-align: center;
+  margin-top: -50px;
+  margin-bottom: -10px;
+  padding-bottom: 0;
+}
+
+.main-header-holder h2 {
+  font-size: 40px;
+  margin-top: -30px;
+  padding-top: 0;
+  text-align: left;
 }
 
 #about {
   background-image: url(../img/grupowe.jpg);
-  height: 768px;
-  width: 1366px;
-  margin: 100px auto;
-  display: flex;
-  flex-direction: row;
-}
-
-.col {
-  background-color: #c9bf8f;
-  opacity: 0.8;
-  flex-basis: 35%;
-  margin: 50px;
-  padding: 20px;
 }
 
 #photogallery {
   background-image: url(../img/kubraktylem.jpg);
-  height: 768px;
-  width: 1366px;
-  margin: 100px auto;
 }
 
-.dances {
-  max-width: 70%;
-  margin: 10%;
-}
-
-.dances a {
+#photogallery .container {
   display: inline-block;
-  margin: 1rem;
+  text-align: center;
+}
+
+a {
+  display: inline-block;
+  padding: 10px 30px;
+  color: #fff;
 }
 
 .galfontS {
   font-size: 36px;
   font-weight: 900;
   text-decoration: none;
-  color: #fff;
 }
 
 .galfontM {
   font-size: 48px;
   font-weight: 900;
   text-decoration: none;
-  color: #fff;
 }
 
 .galfontL {
   font-size: 60px;
   font-weight: 900;
   text-decoration: none;
-  color: #fff;
 }
 
 .galfontXL {
   font-size: 72px;
   font-weight: 900;
   text-decoration: none;
-  color: #fff;
 }
 
 #contact {
   background-image: url(../img/dwieparywpodskoku.jpg);
-  height: 768px;
-  width: 1366px;
-  margin: 100px auto;
-  display: flex;
-  flex-direction: row;
 }
 
 #contact .col {
@@ -135,7 +159,41 @@ h1 {
   margin-top: 20px;
 }
 
-address {
+#contact address {
   margin: 20px auto 20px;
+}
+
+#nav {
+  background-image: url(../img/nav-menu.jpg);
+  height: 768px;
+  width: 1366px;
+  margin: 100px auto;
+}
+
+.nav-ul-holder {
+  margin-left: 40px;
+  padding-top: 40px;
+}
+
+.menu-k-icon {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+a {
+  font-family: 'Museo Slab';
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 12px;
+}
+
+.a1 {
+  color: pink;
+}
+
+li {
+  list-style-type: none;
 }
 /*# sourceMappingURL=style.css.map */

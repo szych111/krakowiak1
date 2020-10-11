@@ -1,0 +1,34 @@
+#nav {
+    background-image: url(../img/nav-menu.jpg);
+    height: 768px;
+    width: 1366px;
+    margin: 100px auto;
+  }
+
+  .nav-ul-holder {
+
+    margin-left: 40px;
+    padding-top: 40px;
+  }
+
+.menu-k-icon {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+a {
+    font-family: 'Museo Slab';
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 12px;
+}
+
+.a1 {
+  color: pink;
+}
+
+li {
+  list-style-type: none;
+}

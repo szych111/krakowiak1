@@ -1,20 +1,20 @@
 
  #photogallery {
   background-image: url(../img/kubraktylem.jpg);
-  height: 768px;
-  width: 1366px;
-  margin: 100px auto;
-}
 
-.dances {
-  max-width: 70%;
-  margin: 10%;
-}
+    .container {
+      display: inline-block;
+      text-align: center;
+    }
+  }
 
-.dances a {
-  display: inline-block;
-  margin: 1rem;
-}
+  a {
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+  }
+
+
 
 @mixin galfont { 
   font-weight: 900;

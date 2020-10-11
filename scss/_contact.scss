@@ -1,21 +1,16 @@
 #contact {
     background-image: url(../img/dwieparywpodskoku.jpg);
-    height: 768px;
-    width: 1366px;
-    margin: 100px auto;
-    display: flex;
-    flex-direction: row;
+    
+    .col {
+      text-align: center;
+    }
+
+    p {
+      margin-top: 20px;
+    }
+    
+    address {
+      margin: 20px auto 20px;
+    }
+
   }
-  
-  #contact .col {
-    text-align: center;
-  }
-  
-  #contact p {
-    margin-top: 20px;
-  }
-  
-  address {
-    margin: 20px auto 20px;
-  }
-  
