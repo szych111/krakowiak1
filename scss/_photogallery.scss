@@ -2,41 +2,33 @@
  #photogallery {
   background-image: url(../img/kubraktylem.jpg);
 
-    .container {
+    .section-content {
       display: inline-block;
       text-align: center;
+      padding-top: 10%;
     }
   }
 
   a {
     display: inline-block;
-    padding: 10px 30px;
+    padding: 0.2em 1em;
     color: #fff;
+    font-weight: 900;
+    text-decoration: none;
   }
 
-
-
-@mixin galfont { 
-  font-weight: 900;
-  text-decoration: none;
-}
-
 .galfontS {
-    font-size: 36px;
-    @include galfont;
+    font-size: 2em;
   }
   
   .galfontM {
-    font-size: 48px;
-    @include galfont;
+    font-size: 2.5em;
   }
   
   .galfontL {
-    font-size: 60px;
-    @include galfont;
+    font-size: 3em;
   }
   
   .galfontXL {
-    font-size: 72px;
-    @include galfont;
+    font-size: 4em;
   }

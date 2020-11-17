@@ -1,199 +1,154 @@
 body {
-  color: #fff;
-  font-family: 'Museo Slab';
-  background-color: #3a3838ef;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-#about, #photogallery, #contact {
-  height: 768px;
-  width: 1366px;
-  margin: 50px auto;
-}
-
-.section-header-holder {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: 10px 20px;
-}
-
-.section-header-holder h2 {
-  font-size: 50px;
-  right: 20px;
-  top: 10px;
-  margin-top: 0;
-}
-
-.k-menu {
-  padding-top: 20px;
-}
-
-.container {
-  display: flex;
-  max-width: 75%;
-  padding-top: 90px;
-  justify-content: space-between;
-}
-
-.col {
-  background-color: #c9bf8f;
-  opacity: 0.75;
-  flex-basis: 45%;
-  margin: 10px 15px;
-  padding: 20px;
-  font-size: 16px;
-}
-
-.col :hover {
-  transform: scale(1.5);
-  background-color: #3a3838ef;
+    text-align: center;
+    font-family: 'Museo Slab';
+    color: #fff;
+    background-color: #3a3838;
+    font-weight: 500;
 }
 
 @font-face {
-  font-family: 'Museo Slab';
-  src: url(../fonts/Museo_Slab_500.otf);
-}
+    font-family: 'Museo Slab';
+    src: url(../fonts/Museo_Slab_500.otf);
+  }
 
-#main {
-  background-image: url(../img/main-yellow.jpg);
-  height: 768px;
-  width: 1366px;
-  margin: 0px auto 100px;
-  position: relative;
-  text-align: center;
-}
-
+/* home */
 .fa {
-  display: block;
-  position: absolute;
-  left: 40px;
-  top: 10px;
-  font-size: 40px;
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-size: 40px;
+    text-align: left;
+}
+.lang {
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-size: 20px;
+    text-align: right;
+}
+.container-main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.main-page {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: ;
 }
 
-.choose-language {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  font-size: 24px;
+.main-page-child {
+    font-size: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+    margin-left: 0;
 }
 
-.main-header-holder {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 180px;
+.main-page-child.title {
+    font-size: 80px;
+    font-weight: 800;
+    justify-content: center;
 }
 
-.main-header-holder h1 {
-  font-size: 200px;
-  font-weight: 700;
-  font-stretch: expanded;
-  text-align: center;
-  margin-top: -50px;
-  margin-bottom: -10px;
-  padding-bottom: 0;
+/*general styles*/
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 50px;
 }
 
-.main-header-holder h2 {
-  font-size: 40px;
-  margin-top: -30px;
-  padding-top: 0;
-  text-align: left;
+.header {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-basis: 100%;
+    align-items: flex-start;
+    padding: 20px;
 }
+
+.header-child {
+    display: flex;
+    flex: 1;
+}
+
+.header-child1 {
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+.header-child2 {
+    align-items: flex-start;
+    justify-content: flex-end;
+    font-size: 70px;
+    font-weight: 600;
+    margin: -0;
+    padding: -0;
+}
+
+.main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 70%;
+    margin: -50px 20%;
+}
+
+.main-child {
+    flex: 1;
+    background-color: #c9bf8f;
+    opacity: 0.75;
+    margin: 20px;
+    padding: 10px;
+    width: 40%;
+}
+
+section {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.section-bg {
+    max-width: 100%;
+    height: 756px;
+    background-position: center;
+    background-size: cover;
+    margin: 50px auto;
+}
+
+/*home*/
+
+#home {
+    background-image: url(../img/main-yellow.jpg);
+}
+  
+#home .section-bg {
+    margin: 0px auto 6em;
+    position: relative;
+    text-align: center;
+}
+
+
+
+
+/* about  */
 
 #about {
-  background-image: url(../img/grupowe.jpg);
+    background-image: url(../img/grupowe.jpg);
 }
 
+/* photogallery */
+  
 #photogallery {
-  background-image: url(../img/kubraktylem.jpg);
+    background-image: url(../img/kubraktylem.jpg);
 }
 
-#photogallery .container {
-  display: inline-block;
-  text-align: center;
-}
-
-a {
-  display: inline-block;
-  padding: 10px 30px;
-  color: #fff;
-}
-
-.galfontS {
-  font-size: 36px;
-  font-weight: 900;
-  text-decoration: none;
-}
-
-.galfontM {
-  font-size: 48px;
-  font-weight: 900;
-  text-decoration: none;
-}
-
-.galfontL {
-  font-size: 60px;
-  font-weight: 900;
-  text-decoration: none;
-}
-
-.galfontXL {
-  font-size: 72px;
-  font-weight: 900;
-  text-decoration: none;
-}
+/* contact */
 
 #contact {
-  background-image: url(../img/dwieparywpodskoku.jpg);
-}
+    background-image: url(../img/dwieparywpodskoku.jpg);
 
-#contact .col {
-  text-align: center;
-}
 
-#contact p {
-  margin-top: 20px;
-}
-
-#contact address {
-  margin: 20px auto 20px;
-}
-
-#nav {
-  background-image: url(../img/nav-menu.jpg);
-  height: 768px;
-  width: 1366px;
-  margin: 100px auto;
-}
-
-.nav-ul-holder {
-  margin-left: 40px;
-  padding-top: 40px;
-}
-
-.menu-k-icon {
-  padding-left: 20px;
-  padding-top: 20px;
-}
-
-a {
-  font-family: 'Museo Slab';
-  text-decoration: none;
-  color: #fff;
-  font-size: 30px;
-  font-weight: 700;
-  margin: 12px;
-}
-
-.a1 {
-  color: pink;
-}
-
-li {
-  list-style-type: none;
-}
-/*# sourceMappingURL=style.css.map */
