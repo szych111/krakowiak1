@@ -1,154 +1,169 @@
+#photogallery a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.galfontS {
+  font-size: 20px;
+}
+
+.galfontM {
+  font-size: 20px;
+}
+
+.galfontL {
+  font-size: 20px;
+}
+
+.galfontXL {
+  font-size: 120px;
+}
+
 body {
-    text-align: center;
-    font-family: 'Museo Slab';
-    color: #fff;
-    background-color: #3a3838;
-    font-weight: 500;
+  text-align: center;
+  color: white;
+  background-color: #3a3838;
+  font-family: 'Museo Slab';
 }
 
 @font-face {
-    font-family: 'Museo Slab';
-    src: url(../fonts/Museo_Slab_500.otf);
-  }
-
-/* home */
-.fa {
-    align-items: flex-end;
-    justify-content: flex-start;
-    font-size: 40px;
-    text-align: left;
-}
-.lang {
-    align-items: flex-end;
-    justify-content: flex-start;
-    font-size: 20px;
-    text-align: right;
-}
-.container-main {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-}
-.main-page {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: flex-start;
-    margin: ;
+  font-family: 'Museo Slab';
+  src: url(../fonts/Museo_Slab_500.otf);
 }
 
-.main-page-child {
-    font-size: 20px;
-    justify-content: center;
-    align-items: flex-start;
-    flex: 1;
-    margin-left: 0;
-}
-
-.main-page-child.title {
-    font-size: 80px;
-    font-weight: 800;
-    justify-content: center;
-}
-
-/*general styles*/
-
+/* general styles */
 .container {
-    display: flex;
-    flex-flow: column nowrap;
-    margin-bottom: 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 50px;
 }
 
 .header {
-    display: flex;
-    flex-flow: row nowrap;
-    flex-basis: 100%;
-    align-items: flex-start;
-    padding: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  flex-basis: 100%;
+  align-items: flex-start;
+  padding: 20px;
 }
 
 .header-child {
-    display: flex;
-    flex: 1;
+  display: flex;
+  flex: 1;
 }
 
 .header-child1 {
-    align-items: flex-end;
-    justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
+
 .header-child2 {
-    align-items: flex-start;
-    justify-content: flex-end;
-    font-size: 70px;
-    font-weight: 600;
-    margin: -0;
-    padding: -0;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 600;
+  margin-top: -10px;
 }
 
 .main {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: flex-start;
-    width: 70%;
-    margin: -50px 20%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 80%;
+  margin: -10% 10%;
 }
 
 .main-child {
-    flex: 1;
-    background-color: #c9bf8f;
-    opacity: 0.75;
-    margin: 20px;
-    padding: 10px;
-    width: 40%;
+  flex: 1;
+  background-color: #c9bf8f;
+  opacity: 0.75;
+  margin: 20px;
+  padding: 10px;
+  width: 45%;
+  font-weight: 100;
 }
 
 section {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
 }
 
 .section-bg {
-    max-width: 100%;
-    height: 756px;
-    background-position: center;
-    background-size: cover;
-    margin: 50px auto;
+  max-width: 100%;
+  height: 756px;
+  background-position: center;
+  background-size: cover;
+  margin: 50px auto;
 }
 
-/*home*/
+/* home */
+.fa {
+  font-size: 40px;
+}
+
+#home span {
+  font-size: 30px;
+}
+
+.container-main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  font-weight: 200;
+  position: relative;
+}
+
+.main-page {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 150px auto;
+}
+
+.main-page-child {
+  font-size: 30px;
+  font-weight: 600;
+  flex: 1;
+}
+
+.main-page-child.title {
+  font-size: 180px;
+  font-stretch: expanded;
+  font-weight: 800;
+  margin-bottom: -25px;
+}
 
 #home {
-    background-image: url(../img/main-yellow.jpg);
+  background-image: url(../img/main-yellow.jpg);
 }
-  
+
 #home .section-bg {
-    margin: 0px auto 6em;
-    position: relative;
-    text-align: center;
+  margin: 0 auto 6em;
+  position: relative;
+  text-align: center;
 }
-
-
-
 
 /* about  */
-
 #about {
-    background-image: url(../img/grupowe.jpg);
+  background-image: url(../img/grupowe.jpg);
 }
 
-/* photogallery */
-  
+/* photogallery  */
 #photogallery {
-    background-image: url(../img/kubraktylem.jpg);
+  background-image: url(../img/kubraktylem.jpg);
 }
 
-/* contact */
-
+/* contact  */
 #contact {
-    background-image: url(../img/dwieparywpodskoku.jpg);
-
-
+  background-image: url(../img/dwieparywpodskoku.jpg);
+}
+/*# sourceMappingURL=style.css.map */
