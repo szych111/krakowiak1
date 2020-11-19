@@ -2,20 +2,29 @@
     a {
         text-decoration: none;
         color: white;
-        font-size: 20px;
-        font-weight: 400;
+        font-weight: 600;
+        font-stretch: extra-expanded;
+        margin: 5px 15px;
+        display: inline-block;
     }
+
+    .main-child {
+        background-color: transparent;
+    }
+
+
 }
 
 .galfontS {
-    font-size: 20px;
+    font-size: 30px;
 }
 .galfontM {
-    font-size: 20px;
+    font-size: 50px;
+    color: green;
 }
 .galfontL {
-    font-size: 20px;
+    font-size: 70px;
 }
 .galfontXL {
-    font-size: 120px;
+    font-size: 90px;
 }

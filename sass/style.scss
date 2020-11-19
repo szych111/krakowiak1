@@ -90,7 +90,8 @@ section {
 }
 
 #home span {
-    font-size: 30px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .container-main {
@@ -137,6 +138,19 @@ section {
 
 #about {
     background-image: url(../img/grupowe.jpg);
+
+    .one {
+        font-family: 'sheila';
+        font-size: 35px;
+    }
+
+    .two {
+        font-family: 'gautreaux', sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 35px;
+        
+    }
 }
 
 /* photogallery  */
