@@ -56,7 +56,7 @@
 
 /* hover final state */
 #animation:hover div.anim-container {
-  transform: translate(1840px, 400px);
+  transform: translate(99%, 90%);
 }
 
 #animation:hover div.anim-object {
