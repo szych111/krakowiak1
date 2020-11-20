@@ -1,5 +1,4 @@
 @import 'photogallery';
-@import 'animation-sample';
 
 body {
     text-align: center;
@@ -56,7 +55,7 @@ h2 {
     justify-content: center;
     align-items: flex-start;
     width: 80%;
-    margin: -10% 10%;
+    margin: -12% 15%;
 }
 
 .main-child {
@@ -153,6 +152,25 @@ h2 {
         font-size: 35px;
         
     }
+}
+
+/* team */
+
+.team-member {
+    background-color: rgba(134, 129, 129,0.5);
+    padding: 5px 15px 15px 1px;
+    margin-bottom: 15px;
+}
+
+.team-memb-img {
+    background-color: #c9bf8f;
+    padding: 8px;
+    float: left;
+    transform: scale(0.8);
+}
+
+.team-memb-story {
+    text-align: right;
 }
 
 /* photogallery  */

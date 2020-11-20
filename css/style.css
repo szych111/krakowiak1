@@ -1,10 +1,21 @@
+#photogallery div.main-child {
+  margin: -50px;
+}
+
 #photogallery a {
   text-decoration: none;
   color: white;
   font-weight: 600;
   font-stretch: extra-expanded;
-  margin: 5px 20px;
+  margin: 15px 30px;
   display: inline-block;
+  transition-property: color, transform;
+  transition-duration: .5s, 1.0s;
+  transition-delay: 0, 1s;
+}
+
+#photogallery a:hover {
+  transform: rotateX(360deg);
 }
 
 #photogallery span {
@@ -18,18 +29,18 @@
 
 .galfontS {
   font-size: 30px;
-  transition: transform 2s;
+  transition-property: color, transform;
+  transition-duration: .5s, .5s;
+  transition-delay: 0, 1s;
 }
 
 .galfontS:hover {
-  width: 300px;
-  height: 300px;
-  transform: rotate(180deg);
+  color: gray;
+  transform: rotateX(360deg);
 }
 
 .galfontM {
   font-size: 50px;
-  color: green;
 }
 
 .galfontL {
@@ -40,27 +51,11 @@
   font-size: 80px;
 }
 
-.anim-container {
-  position: relative;
-  bottom: 25px;
-  left: 25px;
-  transition: 3s ease-in;
-}
-
-.anim-object {
-  position: absolute;
-  width: 240px;
-  height: 240px;
-  transition: 2s ease-in-out;
-}
-
-/* hover final state */
-#animation:hover div.anim-container {
-  transform: translate(99%, 90%);
-}
-
-#animation:hover div.anim-object {
-  transform: rotate(70deg);
+.gal-grupa {
+  font-size: 25px;
+  font-weight: 700;
+  padding: 0;
+  margin-bottom: -15px;
 }
 
 body {
@@ -116,7 +111,7 @@ h2 {
   justify-content: center;
   align-items: flex-start;
   width: 80%;
-  margin: -10% 10%;
+  margin: -12% 15%;
 }
 
 .main-child {
@@ -203,6 +198,24 @@ h2 {
   font-weight: 400;
   font-style: normal;
   font-size: 35px;
+}
+
+/* team */
+.team-member {
+  background-color: rgba(134, 129, 129, 0.5);
+  padding: 5px 15px 15px 1px;
+  margin-bottom: 15px;
+}
+
+.team-memb-img {
+  background-color: #c9bf8f;
+  padding: 8px;
+  float: left;
+  transform: scale(0.8);
+}
+
+.team-memb-story {
+  text-align: right;
 }
 
 /* photogallery  */

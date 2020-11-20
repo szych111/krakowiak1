@@ -1,13 +1,27 @@
 #photogallery {
+
+    div.main-child {
+        margin: -50px;
+    }
+
     a {
         text-decoration: none;
         color: white;
         font-weight: 600;
         font-stretch: extra-expanded;
-        margin: 5px 20px;
+        margin: 15px 30px;
         display: inline-block;
+        transition-property: color, transform;
+        transition-duration: .5s, 1.0s;
+        transition-delay: 0, 1s;
     }
 
+    a:hover {
+        transform: rotateX(360deg) ;
+    }
+
+    .photogal:hover {
+    }
     span {
         margin-left: 0;
         margin-right: 0;
@@ -21,20 +35,28 @@
 
 .galfontS {
     font-size: 30px;
-    transition: transform 2s;
+    transition-property: color, transform;
+    transition-duration: .5s, .5s;
+    transition-delay: 0, 1s;
+
 }
 .galfontS:hover {
-  width: 300px;
-  height: 300px;
-  transform: rotate(180deg);
+    color: gray;
+    transform: rotateX(360deg) ;
+   // transform: translateY(-25px);
 }
 .galfontM {
     font-size: 50px;
-    color: green;
 }
 .galfontL {
     font-size: 65px;
 }
 .galfontXL {
     font-size: 80px;
+}
+.gal-grupa {
+    font-size: 25px;
+    font-weight: 700;
+    padding: 0;
+    margin-bottom: -15px;
 }
