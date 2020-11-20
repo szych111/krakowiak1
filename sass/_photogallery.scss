@@ -4,27 +4,37 @@
         color: white;
         font-weight: 600;
         font-stretch: extra-expanded;
-        margin: 5px 15px;
+        margin: 5px 20px;
         display: inline-block;
+    }
+
+    span {
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .main-child {
         background-color: transparent;
     }
 
-
 }
 
 .galfontS {
     font-size: 30px;
+    transition: transform 2s;
+}
+.galfontS:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(180deg);
 }
 .galfontM {
     font-size: 50px;
     color: green;
 }
 .galfontL {
-    font-size: 70px;
+    font-size: 65px;
 }
 .galfontXL {
-    font-size: 90px;
+    font-size: 80px;
 }

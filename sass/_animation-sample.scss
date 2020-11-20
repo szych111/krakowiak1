@@ -1,0 +1,36 @@
+ 
+  .anim-container {
+    position: relative;
+    bottom: 25px;
+    left: 25px;
+    -webkit-transition: 3s ease-in;
+    -moz-transition: 3s ease-in;
+    -o-transition: 3s ease-in;
+    transition: 3s ease-in;
+  }
+  .anim-object {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    // background: url(../img/k-menu.png) no-repeat;
+    -webkit-transition: 2s ease-in-out;
+    -moz-transition: 2s ease-in-out;
+    -o-transition: 2s ease-in-out;
+    transition: 2s ease-in-out;
+  }
+
+  /* hover final state */
+  #animation:hover div.anim-container {
+    -webkit-transform: translate(540px,200px);
+    -moz-transform: translate(540px,200px);
+    -o-transform: translate(540px,200px);
+    -ms-transform: translate(540px,200px);
+    transform: translate(1840px,400px);
+  }
+  #animation:hover div.anim-object {
+    -webkit-transform: rotate(70deg);
+    -moz-transform: rotate(70deg);
+    -o-transform: rotate(70deg);
+    -ms-transform: rotate(70deg);
+    transform: rotate(70deg);
+  }
