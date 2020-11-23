@@ -1,11 +1,16 @@
 $(document).ready(function(){
-    $('.k-menu').click(function() {
-        console.log('klik');
-    });
+//     $('.k-menu').click(function() {
+//         console.log('klik');
+//     });
 
-$($('.main-menu-item').get().reverse()).each(function(index){
-    /* $(this).css({paddingLeft: '30px'}); */
-    $(this).css({paddingLeft: 15*index + 'px'});
+// $($('.main-menu-item').get().reverse()).each(function(index){
+//     /* $(this).css({paddingLeft: '30px'}); */
+//     $(this).css({paddingLeft: 15*index + 'px'});
+
+// });
+
+$('.nav-menu-click').click(function(){
+    $('.nav-menu-holder').toggleClass('open');
 
 });
 
