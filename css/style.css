@@ -1,9 +1,11 @@
 
 body {
+  margin: -2px -1px;
   text-align: center;
   color: white;
   background-color: #3a3838;
   font-family: 'Museo Slab';
+  font-size: calc(10px + .6vw);
 }
 
 @font-face {
@@ -22,12 +24,18 @@ body {
   flex-flow: row nowrap;
   flex-basis: 100%;
   align-items: flex-start;
-  padding: 20px;
+  
+  padding: calc(15px + 0.1vw);
 }
 
 .header-child {
   display: flex;
   flex: 1;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
 }
 
 .header-child1 {
@@ -41,7 +49,7 @@ body {
 }
 
 h2 {
-  font-size: 60px;
+  font-size: calc(30px + 2.2vw);
   font-weight: 600;
   margin-top: 0px;
   margin-bottom: -0.8em;
@@ -81,11 +89,11 @@ address {
 
 /* home */
 .fa {
-  font-size: calc(40px + 1vw);
+  font-size: calc(25px + 1vw);
 }
 
 #home span {
-  font-size: calc(15px + 1vw);
+  font-size: calc(12px + 1vw);
   font-weight: 600;
 }
 
@@ -94,7 +102,6 @@ address {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  font-weight: 200;
   position: relative;
 }
 
@@ -114,10 +121,10 @@ address {
 
 .main-page-child.title {
   display: flex;
-  font-size: calc(60px + 6vw);
+  font-size: calc(25px + 9vw);
   font-stretch: expanded;
-  font-weight: calc(600 * 1.2vw);
-  margin-bottom: -25px;
+  font-weight: calc(600 * 1.5vw);
+  margin-bottom: -2.2vw;
 }
 
 #home {
@@ -134,21 +141,29 @@ address {
 #about {
   background-image: url(../img/grupowe.jpg);
 }
+ .about-cont-read {
+   display: block;
+   text-align: right;
+   opacity: 0.8;
+ }
 
-#about .one {
-  font-family: buffet-script;
-  font-style: normal;
-  font-size: 25px;
+ .about-cont-read:hover {
+   opacity: 0.5;
+   cursor: pointer;
+ }
+
+.about-tbc {
+  display: none;
 }
 
-#about .two {
-  font-family: museo slab;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 35px;
-}
+
 
 /* team */
+
+#team .container {
+  display: none;
+}
+
 .team-member {
   background-color: rgba(134, 129, 129, 0.5);
   padding: 5px 15px 15px 1px;
@@ -170,18 +185,15 @@ address {
 #photogallery {
   background-image: url(../img/kubraktylem.jpg);
 }
-.main-photogal {
-  width: 70%;
-  margin: 10% auto;
-
-}
 
 #photogallery a {
   text-decoration: none;
   color: white;
   font-weight: 600;
   font-stretch: extra-expanded;
-  margin: 15px 30px;
+  margin-bottom: calc(10px + 0.2vw); 
+  margin-left: calc(10px + 0.1vw);
+  margin-right: calc(10px + 0.1vw);
   display: inline-block;
   transition-property: color, transform;
   transition-duration: .5s, 1.0s;
@@ -202,34 +214,26 @@ address {
 }
 
 .galfontS {
-  font-size: 20px;
-  transition-property: color, transform;
-  transition-duration: .5s, .5s;
-  transition-delay: 0, 1s;
-}
-
-.galfontS:hover {
-  color: gray;
-  transform: rotateX(360deg);
+  font-size: calc(10px + 1.8vw);
 }
 
 .galfontM {
-  font-size: 30px;
+  font-size: calc(15px + 2.4vw);
 }
 
 .galfontL {
-  font-size: 45px;
+  font-size: calc(20px + 3.0vw);
 }
 
 .galfontXL {
-  font-size: 60px;
+  font-size: calc(25px + 4.0vw);
 }
 
 .gal-grupa {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: calc(10px + 2.2vw);
+  font-weight: calc(100 * 0.2vw);
   padding: 0;
-  margin-bottom: -15px;
+  margin-bottom: -1.4vw;
 }
 /* contact  */
 
@@ -273,6 +277,7 @@ nav ul {
   padding-right: 30px;
   margin-right: 17px;
   height: 100vw;
+  display: none;
 }
 
 .nav-menu-holder.open {

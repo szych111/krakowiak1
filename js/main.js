@@ -14,6 +14,8 @@ $('.nav-menu-button').click(function(){
 
 });
 
+
+
 let dancesArray = ['krakowskie', 'lubelskie', 'góralskie', 'Księstwo Warszawskie', 'imprezy', 'dzieci', 'młodzież', 'dorośli', 'rzeszowskie'];
 
 let array1 = [5, 15, 35, 6, 2, 32]
