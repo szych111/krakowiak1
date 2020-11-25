@@ -9,7 +9,7 @@ $(document).ready(function(){
 
 // });
 
-$('.nav-menu-click').click(function(){
+$('.nav-menu-button').click(function(){
     $('.nav-menu-holder').toggleClass('open');
 
 });
