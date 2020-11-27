@@ -24,8 +24,7 @@ body {
   flex-flow: row nowrap;
   flex-basis: 100%;
   align-items: flex-start;
-  
-  padding: calc(15px + 0.1vw);
+  padding: 0 5vw;
 }
 
 .header-child {
@@ -34,13 +33,14 @@ body {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: calc(70px + 10vw);
   height: auto;
 }
 
 .header-child1 {
   align-items: flex-start;
   justify-content: flex-start;
+  
 }
 
 .header-child2 {
@@ -51,7 +51,7 @@ body {
 h2 {
   font-size: calc(30px + 2.2vw);
   font-weight: 600;
-  margin-top: 0px;
+  margin-top: 20px;
   margin-bottom: -0.8em;
 }
 
@@ -90,11 +90,13 @@ address {
 /* home */
 .fa {
   font-size: calc(25px + 1vw);
+  margin-top: 5px;
 }
 
 #home span {
   font-size: calc(12px + 1vw);
   font-weight: 600;
+  margin-top: 15px;
 }
 
 .container-main {
@@ -141,22 +143,36 @@ address {
 #about {
   background-image: url(../img/grupowe.jpg);
 }
- .about-cont-read {
-   display: block;
-   text-align: right;
+ #about-read-more {
    opacity: 0.8;
+   font-weight: 700;
+   color: rgb(161, 152, 112);
+   padding: 5px;
  }
 
- .about-cont-read:hover {
+ #about-read-more:hover {
    opacity: 0.5;
    cursor: pointer;
  }
 
-.about-tbc {
+.open {
+  display: inline;
+}
+
+#about-tbc {
   display: none;
 }
 
+.about-partners {
+  background-color: rgb(201,191,143,0.8);
+  width: 100%;
+}
 
+.about-partners img {
+  width: calc(5% + 2.7vw);
+  vertical-align: middle;
+  padding: 1vw;
+}
 
 /* team */
 
@@ -254,18 +270,25 @@ address {
 }
 
 /* navigation menu */
-
 .nav-menu-holder {
-  text-align: right;
-  background-color: transparent;
-  position: relative;
-  left:-440px;
+  padding: 20px;
+  background-color: rgba(134, 129, 129, 0.2);
   width: max-content;
-  height: 100%;
+  transition: 1s;
+  margin-left: -240px;
+  vertical-align: baseline;
+  position: fixed;
   z-index: 1000;
-  transition: 1.5s;
-  display: none;
 }
+
+.nav-menu-open {
+  margin-left: -20px;
+}
+
+/* .nav-menu-holder {
+position: relative;
+width: max-content;
+} */
 
 nav ul {
   list-style: none;
@@ -274,14 +297,8 @@ nav ul {
   font-weight: 800;
   line-height: 2;
   background-color: #c9bf8fc5;
-  padding-right: 30px;
+  padding-right: 10px;
   margin-right: 17px;
-  height: 100vw;
-  display: none;
-}
-
-.nav-menu-holder.open {
-  left: -30px;
 }
 
 nav a {
