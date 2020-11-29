@@ -3,7 +3,7 @@ body {
   margin: -2px -1px;
   text-align: center;
   color: white;
-  background-color: #3a3838;
+  background-color: rgb(201,191,143);
   font-family: 'Museo Slab';
   font-size: calc(10px + .6vw);
 }
@@ -146,7 +146,7 @@ address {
  #about-read-more {
    opacity: 0.8;
    font-weight: 700;
-   color: rgb(161, 152, 112);
+   color:  rgb(201,191,143);
    padding: 5px;
  }
 
@@ -255,7 +255,6 @@ address {
 
 #contact {
   background-image: url(../img/dwieparywpodskoku.jpg);
-  position: relative;
 }
 
 .social-media a {
@@ -271,14 +270,14 @@ address {
 
 /* navigation menu */
 .nav-menu-holder {
-  padding: 20px;
+  padding-right: 5vw;
   background-color: rgba(134, 129, 129, 0.2);
-  width: max-content;
+  top:0;
+  bottom: 0;
   transition: 1s;
   margin-left: -240px;
   vertical-align: baseline;
   position: fixed;
-  z-index: 1000;
 }
 
 .nav-menu-open {
@@ -293,17 +292,21 @@ width: max-content;
 nav ul {
   list-style: none;
   text-align: right;
-  font-size: 30px;
+  font-size: calc(24px + 1vw);
   font-weight: 800;
   line-height: 2;
-  background-color: #c9bf8fc5;
-  padding-right: 10px;
-  margin-right: 17px;
+  background-color:rgb(201,191,143,0.8);
+  padding: 5vh 1vw;
+  top: 10%;
+  bottom: 10%;
 }
 
 nav a {
   color: white;
   text-decoration: none;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  padding: 1.5vh;
 }
 
 nav a:hover {
