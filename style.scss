@@ -2,7 +2,7 @@ body {
   margin: -2px -1px;
   text-align: center;
   color: white;
-  background-color: #c9bf8f;
+  background-color: rgb(201,191,143);
   font-family: 'Museo Slab';
   font-size: calc(10px + .6vw);
 }
@@ -39,6 +39,7 @@ body {
 .header-child1 {
   align-items: flex-start;
   justify-content: flex-start;
+  
 }
 
 .header-child2 {
@@ -141,18 +142,17 @@ address {
 #about {
   background-image: url(../img/grupowe.jpg);
 }
+ #about-read-more {
+   opacity: 0.8;
+   font-weight: 700;
+   color:  rgb(201,191,143);
+   padding: 5px;
+ }
 
-#about-read-more {
-  opacity: 0.8;
-  font-weight: 700;
-  color: #c9bf8f;
-  padding: 5px;
-}
-
-#about-read-more:hover {
-  opacity: 0.5;
-  cursor: pointer;
-}
+ #about-read-more:hover {
+   opacity: 0.5;
+   cursor: pointer;
+ }
 
 .open {
   display: inline;
@@ -163,7 +163,7 @@ address {
 }
 
 .about-partners {
-  background-color: rgba(201, 191, 143, 0.8);
+  background-color: rgba(201,191,143,0.8);
   width: 100%;
 }
 
@@ -174,6 +174,7 @@ address {
 }
 
 /* team */
+
 #team .container {
   display: none;
 }
@@ -205,7 +206,7 @@ address {
   color: white;
   font-weight: 600;
   font-stretch: extra-expanded;
-  margin-bottom: calc(10px + 0.2vw);
+  margin-bottom: calc(10px + 0.2vw); 
   margin-left: calc(10px + 0.1vw);
   margin-right: calc(10px + 0.1vw);
   display: inline-block;
@@ -249,8 +250,8 @@ address {
   padding: 0;
   margin-bottom: -1.4vw;
 }
-
 /* contact  */
+
 #contact {
   background-image: url(../img/dwieparywpodskoku.jpg);
 }
@@ -270,7 +271,7 @@ address {
 .nav-menu-holder {
   padding-right: 5vw;
   background-color: rgba(134, 129, 129, 0.2);
-  top: 0;
+  top:0;
   bottom: 0;
   transition: 1s;
   margin-left: -240px;
@@ -286,13 +287,14 @@ address {
 position: relative;
 width: max-content;
 } */
+
 nav ul {
   list-style: none;
   text-align: right;
   font-size: calc(24px + 1vw);
   font-weight: 800;
   line-height: 2;
-  background-color: rgba(201, 191, 143, 0.8);
+  background-color:rgba(201,191,143,0.8);
   padding: 5vh 1vw;
   top: 10%;
   bottom: 10%;
@@ -311,11 +313,16 @@ nav a:hover {
 }
 
 .nav-menu-button {
-  border: none;
+  border: none; 
   outline: none;
 }
 
 .nav-menu-button:hover {
   cursor: pointer;
 }
+
+
+
 /*# sourceMappingURL=style.css.map */
+
+
