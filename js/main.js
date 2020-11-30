@@ -11,6 +11,10 @@ $(document).ready(function () {
     $('.nav-menu-button').on('click', () => {
         $menu.toggleClass('nav-menu-open');
     });
+
+    $('.main-menu-item').on('click', () => {
+        $menu.toggleClass('nav-menu-open');
+    });
         
         
     })

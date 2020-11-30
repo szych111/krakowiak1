@@ -1,15 +1,81 @@
-body {
-  margin: -2px -1px;
-  text-align: center;
+.sticky-arrow-up {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: min-content;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 1vh;
+  opacity: 0.3;
+}
+
+.sticky-arrow-up a {
   color: white;
-  background-color: #c9bf8f;
-  font-family: 'Museo Slab';
-  font-size: calc(10px + .6vw);
+  cursor: pointer;
+}
+
+.sticky-arrow-up .fa-arrow-up {
+  padding: 0.5vh 1vh 1vh;
+}
+
+.nav-menu-holder {
+  padding-right: 5vw;
+  background-color: rgba(134, 129, 129, 0.2);
+  top: 0;
+  bottom: 0;
+  transition: 1.5s;
+  margin-left: -240px;
+  vertical-align: baseline;
+  position: fixed;
+}
+
+.nav-menu-open {
+  margin-left: -20px;
+}
+
+nav ul {
+  list-style: none;
+  text-align: right;
+  font-size: calc(24px + 1vw);
+  font-weight: 800;
+  line-height: 2;
+  background-color: rgba(201, 191, 143, 0.8);
+  padding: 5vh 1vw;
+  top: 10%;
+  bottom: 10%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 1.5vh;
+}
+
+nav a:hover {
+  opacity: .5;
+}
+
+.nav-menu-button {
+  border: none;
+  outline: none;
+}
+
+.nav-menu-button:hover {
+  cursor: pointer;
 }
 
 @font-face {
   font-family: 'Museo Slab';
   src: url(../fonts/Museo_Slab_500.otf);
+}
+
+body {
+  margin: -2px -1px;
+  text-align: center;
+  color: white;
+  background-color: #52504b;
+  font-family: 'Museo Slab';
+  font-size: calc(10px + .6vw);
 }
 
 /* general styles */
@@ -82,7 +148,7 @@ address {
   height: 756px;
   background-position: center;
   background-size: cover;
-  margin: 0px auto 100px;
+  margin: 0px auto 10vh;
 }
 
 /* home */
@@ -264,58 +330,5 @@ address {
 
 .social-media a :hover {
   opacity: .6;
-}
-
-/* navigation menu */
-.nav-menu-holder {
-  padding-right: 5vw;
-  background-color: rgba(134, 129, 129, 0.2);
-  top: 0;
-  bottom: 0;
-  transition: 1s;
-  margin-left: -240px;
-  vertical-align: baseline;
-  position: fixed;
-}
-
-.nav-menu-open {
-  margin-left: -20px;
-}
-
-/* .nav-menu-holder {
-position: relative;
-width: max-content;
-} */
-nav ul {
-  list-style: none;
-  text-align: right;
-  font-size: calc(24px + 1vw);
-  font-weight: 800;
-  line-height: 2;
-  background-color: rgba(201, 191, 143, 0.8);
-  padding: 5vh 1vw;
-  top: 10%;
-  bottom: 10%;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  writing-mode: vertical-lr;
-  text-orientation: mixed;
-  padding: 1.5vh;
-}
-
-nav a:hover {
-  opacity: .5;
-}
-
-.nav-menu-button {
-  border: none;
-  outline: none;
-}
-
-.nav-menu-button:hover {
-  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
