@@ -99,6 +99,8 @@ body {
 .photogal-photos {
   flex: 2;
   margin: 1%;
+  padding: 1vh 0;
+  background-color: rgba(82, 80, 75, 0.7);
 }
 
 .photogal-photo {
