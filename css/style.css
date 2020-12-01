@@ -64,6 +64,48 @@ nav a:hover {
   cursor: pointer;
 }
 
+body {
+  background-image: url(../img/peacock-feather.svg);
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+}
+
+.photogal-header {
+  text-align: left;
+  padding: 2vh;
+}
+
+.photogal-menu-k {
+  width: 10vw;
+  margin: 1vw;
+}
+
+.photogal-title {
+  text-align: left;
+  margin: 2vh;
+  float: right;
+}
+
+.photogal-container {
+  display: flex;
+}
+
+.photogal-about {
+  flex: 1;
+  padding: 1vw 2vw;
+}
+
+.photogal-photos {
+  flex: 2;
+  margin: 1%;
+}
+
+.photogal-photo {
+  width: 15vw;
+  margin: 1%;
+}
+
 @font-face {
   font-family: 'Museo Slab';
   src: url(../fonts/Museo_Slab_500.otf);
