@@ -1,8 +1,7 @@
 @import 'navigation';
 @import 'photogal';
-
-$base-beige: rgb(201,191,143);
-$base-grey: rgb(82, 80, 75);
+@import 'colors';
+@import 'about';
 
 @font-face {
   font-family: 'Museo Slab';
@@ -29,7 +28,7 @@ body {
   flex-flow: row nowrap;
   flex-basis: 100%;
   align-items: flex-start;
-  padding: 0 5vw;
+  padding: 0 3vw;
 }
 
 .header-child {
@@ -38,7 +37,7 @@ body {
 }
 
 .img-responsive {
-  width: calc(70px + 10vw);
+  width: calc(30px + 10vw);
   height: auto;
 }
 
@@ -61,10 +60,7 @@ h2 {
 }
 
 .main {
-  columns: 2;
-  column-width: 350px;
-  width: 80%;
-  margin: 1% 10%;
+  margin: 0 5vw 10vh 20vw;
   padding: 10px 20px;
 }
 
@@ -90,6 +86,7 @@ address {
   background-position: center;
   background-size: cover;
   margin: 0px auto 10vh;
+  display: block;
 }
 
 /* home */
@@ -145,39 +142,7 @@ address {
 }
 
 /* about  */
-#about {
-  background-image: url(../img/grupowe.jpg);
-}
- #about-read-more {
-   opacity: 0.8;
-   font-weight: 700;
-   color:  rgb(201,191,143);
-   padding: 5px;
- }
 
- #about-read-more:hover {
-   opacity: 0.5;
-   cursor: pointer;
- }
-
-.open {
-  display: inline;
-}
-
-#about-tbc {
-  display: none;
-}
-
-.about-partners {
-  background-color: rgba(201,191,143,0.8);
-  width: 100%;
-}
-
-.about-partners img {
-  width: calc(5% + 2.7vw);
-  vertical-align: middle;
-  padding: 1vw;
-}
 
 /* team */
 

@@ -39,7 +39,7 @@ nav ul {
   font-size: calc(24px + 1vw);
   font-weight: 800;
   line-height: 2;
-  background-color: rgba(201, 191, 143, 0.8);
+  background-color: #c9bf8f;
   padding: 5vh 1vw;
   top: 10%;
   bottom: 10%;
@@ -64,7 +64,7 @@ nav a:hover {
   cursor: pointer;
 }
 
-body {
+#photogal-krakowiak {
   background-image: url(../img/peacock-feather.svg);
   background-position: center;
   background-size: 60%;
@@ -100,12 +100,75 @@ body {
   flex: 2;
   margin: 1%;
   padding: 1vh 0;
-  background-color: rgba(82, 80, 75, 0.7);
+  background-color: rgba(82, 80, 75, 0.8);
 }
 
 .photogal-photo {
   width: 15vw;
   margin: 1%;
+}
+
+.about-container {
+  position: relative;
+  max-width: 100vw;
+  height: 756px;
+}
+
+.about-about {
+  position: absolute;
+  top: 10vh;
+  right: 5vw;
+  left: 15vw;
+  columns: 2;
+  column-width: 250px;
+  background-color: rgba(201, 191, 143, 0.8);
+  margin: 0 2vw;
+}
+
+.main-about {
+  margin: 0;
+}
+
+.about-partners {
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  opacity: .8;
+  columns: 2;
+}
+
+.about-partners img {
+  opacity: .9;
+}
+
+#about {
+  background-image: url(../img/grupowe.jpg);
+}
+
+#about-read-more {
+  opacity: 0.8;
+  font-weight: 700;
+  color: #c9bf8f;
+  padding: 5px;
+}
+
+#about-read-more:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.open {
+  display: inline;
+}
+
+#about-tbc {
+  display: none;
+}
+
+.about-partners img {
+  width: calc(5% + 2.7vw);
+  vertical-align: middle;
+  padding: 1vw;
 }
 
 @font-face {
@@ -133,7 +196,7 @@ body {
   flex-flow: row nowrap;
   flex-basis: 100%;
   align-items: flex-start;
-  padding: 0 5vw;
+  padding: 0 3vw;
 }
 
 .header-child {
@@ -142,7 +205,7 @@ body {
 }
 
 .img-responsive {
-  width: calc(70px + 10vw);
+  width: calc(30px + 10vw);
   height: auto;
 }
 
@@ -164,10 +227,7 @@ h2 {
 }
 
 .main {
-  columns: 2;
-  column-width: 350px;
-  width: 80%;
-  margin: 1% 10%;
+  margin: 0 5vw 10vh 20vw;
   padding: 10px 20px;
 }
 
@@ -193,6 +253,7 @@ address {
   background-position: center;
   background-size: cover;
   margin: 0px auto 10vh;
+  display: block;
 }
 
 /* home */
@@ -248,41 +309,6 @@ address {
 }
 
 /* about  */
-#about {
-  background-image: url(../img/grupowe.jpg);
-}
-
-#about-read-more {
-  opacity: 0.8;
-  font-weight: 700;
-  color: #c9bf8f;
-  padding: 5px;
-}
-
-#about-read-more:hover {
-  opacity: 0.5;
-  cursor: pointer;
-}
-
-.open {
-  display: inline;
-}
-
-#about-tbc {
-  display: none;
-}
-
-.about-partners {
-  background-color: rgba(201, 191, 143, 0.8);
-  width: 100%;
-}
-
-.about-partners img {
-  width: calc(5% + 2.7vw);
-  vertical-align: middle;
-  padding: 1vw;
-}
-
 /* team */
 #team .container {
   display: none;

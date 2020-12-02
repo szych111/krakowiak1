@@ -1,3 +1,5 @@
+@import 'colors';
+
 .sticky-arrow-up {
     border: 2px solid white;
     border-radius: 50%;
@@ -39,7 +41,7 @@
     font-size: calc(24px + 1vw);
     font-weight: 800;
     line-height: 2;
-    background-color:rgba(201,191,143,0.8);
+    background-color: $base-beige;
     padding: 5vh 1vw;
     top: 10%;
     bottom: 10%;
