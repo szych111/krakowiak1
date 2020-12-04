@@ -3,6 +3,8 @@
 @import 'colors';
 @import 'about';
 @import 'contact';
+@import 'homepage';
+@import 'team';
 
 @font-face {
   font-family: 'Museo Slab';
@@ -15,7 +17,7 @@ body {
   color: white;
   background-color: $base-grey;
   font-family: 'Museo Slab';
-  font-size: calc(10px + .5vw);
+  font-size: clamp(10px, calc(10px + .5vw), 20px);
 }
 
 /* general styles */
@@ -33,7 +35,7 @@ body {
   flex-flow: row nowrap;
   flex-basis: 100%;
   align-items: flex-start;
-  padding: 0 1.5vw 0 1vw;
+  padding: 0 1.5vw 0 1.5vw;
 }
 
 .header-child {
@@ -49,7 +51,6 @@ body {
 .header-child1 {
   align-items: flex-start;
   justify-content: flex-start;
-  
 }
 
 .header-child2 {
@@ -72,86 +73,6 @@ h2 {
   margin: 0px auto 5vh;
   display: block;
 }
-
-/* home */
-.fa {
-  font-size: calc(25px + 1vw);
-  margin-top: 5px;
-}
-
-#home span {
-  font-size: calc(12px + 1vw);
-  font-weight: 600;
-  margin-top: 15px;
-}
-
-.container-main {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  
-}
-
-.main-page {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 150px auto;
-}
-
-.main-page-child {
-  font-size: calc(10px + 1.6vw);
-  font-weight: 600;
-  flex: 1;
-}
-
-.main-page-child.title {
-  display: flex;
-  font-size: calc(25px + 9vw);
-  font-stretch: expanded;
-  font-weight: calc(600 * 1.5vw);
-  margin-bottom: -2.2vw;
-}
-
-#home {
-  background-image: url(../img/main-yellow.jpg);
-}
-
-#home .section-bg {
-  position: relative;
-  text-align: center;
-}
-
-/* team */
-
-#team .container {
-  display: none;
-}
-
-#team .main {
-  display: none;
-}
-
-.team-member {
-  background-color: rgba(134, 129, 129, 0.5);
-  padding: 5px 15px 15px 1px;
-  margin-bottom: 15px;
-}
-
-.team-memb-img {
-  background-color: #c9bf8f;
-  padding: 8px;
-  float: left;
-  transform: scale(0.8);
-}
-
-.team-memb-story {
-  text-align: right;
-}
-
 
 /*# sourceMappingURL=style.css.map */
 

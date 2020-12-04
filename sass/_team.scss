@@ -1,0 +1,25 @@
+#team .container {
+    display: none;
+  }
+  
+  #team .main {
+    display: none;
+  }
+  
+  .team-member {
+    background-color: rgba(134, 129, 129, 0.5);
+    padding: 5px 15px 15px 1px;
+    margin-bottom: 15px;
+  }
+  
+  .team-memb-img {
+    background-color: #c9bf8f;
+    padding: 8px;
+    float: left;
+    transform: scale(0.8);
+  }
+  
+  .team-memb-story {
+    text-align: right;
+  }
+   

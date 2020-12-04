@@ -1,0 +1,50 @@
+.fa {
+    font-size: calc(25px + 1vw);
+    margin-top: 5px;
+  }
+  
+  #home span {
+    font-size: calc(12px + 1vw);
+    font-weight: 600;
+    margin-top: 15px;
+  }
+  
+  .container-main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+  }
+  
+  .main-page {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 150px auto;
+  }
+  
+  .main-page-child {
+    font-size: calc(10px + 1.6vw);
+    font-weight: 600;
+    flex: 1;
+  }
+  
+  .main-page-child.title {
+    display: flex;
+    font-size: calc(25px + 9vw);
+    font-stretch: expanded;
+    font-weight: calc(600 * 1.5vw);
+    margin-bottom: -2.2vw;
+  }
+  
+  #home {
+    background-image: url(../img/main-yellow.jpg);
+  }
+  
+  #home .section-bg {
+    position: relative;
+    text-align: center;
+  }
