@@ -1,64 +1,60 @@
 .about-container {
   position: relative;
-  max-width: 100vw;
   height: 756px;
 }
 
 .about-about {
   position: absolute;
-  top: 10vh;
-  right: 5vw;
-  left: 15vw;
-    columns: 2;
-    column-width: 250px;
+  top: 12vh;
+  right: 3.5vw;
+  left: 17vw;
+  columns: 2;
+  column-width: 250px;
+
+  p:first-child {
+    padding-top: 1.5vh;
+  }
+  
+  p:last-child {
+    padding-bottom: 1.5vh;
+  }
+
+  p {
     background-color: rgba($base-beige,0.8);
-    margin: 0 2vw;
+    margin: 0;
+    padding: .5vw 1.5vw;
+  }
 }
 
 .main-about {
-    margin: 0;
-    
+  margin: 0
 }
 
 .about-partners {
   position: absolute;
   bottom: 0;
-  background-color: white;
+  background-color: rgba(white,1);
   opacity: .8;
-  columns: 2;
-  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 5vw;
   
   img {
     opacity: .9;
-    
+      width: calc(50% + 2.7vw);
+      vertical-align: middle;
+      padding: 1vw;
   }
   }
 
 #about {
     background-image: url(../img/grupowe.jpg);
+ 
   }
-   #about-read-more {
-     opacity: 0.8;
-     font-weight: 700;
-     color:  rgb(201,191,143);
-     padding: 5px;
-   }
-  
-   #about-read-more:hover {
-     opacity: 0.5;
-     cursor: pointer;
-   }
   
   .open {
     display: inline;
   }
   
-  #about-tbc {
-    display: none;
-  }
   
-  .about-partners img {
-    width: calc(5% + 2.7vw);
-    vertical-align: middle;
-    padding: 1vw;
-  }

@@ -27,6 +27,7 @@
   margin-left: -240px;
   vertical-align: baseline;
   position: fixed;
+  z-index: 100;
 }
 
 .nav-menu-open {
@@ -108,21 +109,90 @@ nav a:hover {
   margin: 1%;
 }
 
+/* photogallery main page */
+#photogallery {
+  background-image: url(../img/kubraktylem.jpg);
+}
+
+#photogallery .photogal-main-container {
+  position: relative;
+  height: 756px;
+}
+
+#photogallery .photogal-main-main {
+  position: absolute;
+  top: 12vh;
+  right: 3.5vw;
+  left: 17vw;
+}
+
+#photogallery a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-stretch: extra-expanded;
+  margin-bottom: calc(10px + 0.2vw);
+  margin-left: calc(10px + 0.1vw);
+  margin-right: calc(10px + 0.1vw);
+  display: inline-block;
+  transition-property: color, transform;
+  transition-duration: .5s, 1.0s;
+  transition-delay: 0, 1s;
+}
+
+#photogallery a:hover {
+  transform: rotateX(360deg);
+}
+
+.galfontS {
+  font-size: calc(10px + 1.8vw);
+}
+
+.galfontM {
+  font-size: calc(15px + 2.4vw);
+}
+
+.galfontL {
+  font-size: calc(20px + 3.0vw);
+}
+
+.galfontXL {
+  font-size: calc(25px + 4.0vw);
+}
+
+.gal-grupa {
+  font-size: calc(10px + 2.2vw);
+  font-weight: calc(100 * 0.2vw);
+  padding: 0;
+  margin-bottom: -1.4vw;
+}
+
 .about-container {
   position: relative;
-  max-width: 100vw;
   height: 756px;
 }
 
 .about-about {
   position: absolute;
-  top: 10vh;
-  right: 5vw;
-  left: 15vw;
+  top: 12vh;
+  right: 3.5vw;
+  left: 17vw;
   columns: 2;
   column-width: 250px;
+}
+
+.about-about p:first-child {
+  padding-top: 1.5vh;
+}
+
+.about-about p:last-child {
+  padding-bottom: 1.5vh;
+}
+
+.about-about p {
   background-color: rgba(201, 191, 143, 0.8);
-  margin: 0 2vw;
+  margin: 0;
+  padding: .5vw 1.5vw;
 }
 
 .main-about {
@@ -134,41 +204,75 @@ nav a:hover {
   bottom: 0;
   background-color: white;
   opacity: .8;
-  columns: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 5vw;
 }
 
 .about-partners img {
   opacity: .9;
+  width: calc(50% + 2.7vw);
+  vertical-align: middle;
+  padding: 1vw;
 }
 
 #about {
   background-image: url(../img/grupowe.jpg);
 }
 
-#about-read-more {
-  opacity: 0.8;
-  font-weight: 700;
-  color: #c9bf8f;
-  padding: 5px;
-}
-
-#about-read-more:hover {
-  opacity: 0.5;
-  cursor: pointer;
-}
-
 .open {
   display: inline;
 }
 
-#about-tbc {
-  display: none;
+#contact {
+  background-image: url(../img/dwieparywpodskoku.jpg);
 }
 
-.about-partners img {
-  width: calc(5% + 2.7vw);
-  vertical-align: middle;
-  padding: 1vw;
+.contact-container {
+  position: relative;
+  height: 756px;
+}
+
+.contact-main {
+  position: absolute;
+  top: 12vh;
+  right: 3.5vw;
+  left: 17vw;
+  columns: 2;
+  column-width: 250px;
+}
+
+.contact-main p:first-child {
+  padding-top: 2vh;
+}
+
+.contact-main p:last-child {
+  padding-bottom: 2vh;
+}
+
+.contact-main p {
+  background-color: rgba(201, 191, 143, 0.8);
+  margin: 0;
+  padding: 1vw 1.5vw;
+}
+
+address {
+  background-color: rgba(201, 191, 143, 0.8);
+}
+
+.social-media a {
+  font-size: calc(8px + .5vw);
+  color: white;
+  display: inline-block;
+  margin-right: 1.5vw;
+  margin-bottom: 2vh;
+  transition: 3s;
+}
+
+.social-media a :hover {
+  opacity: .6;
+  transform: scale(1.1);
 }
 
 @font-face {
@@ -182,7 +286,7 @@ body {
   color: white;
   background-color: #52504b;
   font-family: 'Museo Slab';
-  font-size: calc(10px + .6vw);
+  font-size: calc(10px + .5vw);
 }
 
 /* general styles */
@@ -191,12 +295,16 @@ body {
   flex-flow: column nowrap;
 }
 
+.main {
+  margin-top: 2vh;
+}
+
 .header {
   display: flex;
   flex-flow: row nowrap;
   flex-basis: 100%;
   align-items: flex-start;
-  padding: 0 3vw;
+  padding: 0 1.5vw 0 1vw;
 }
 
 .header-child {
@@ -226,33 +334,12 @@ h2 {
   margin-bottom: -0.8em;
 }
 
-.main {
-  margin: 0 5vw 10vh 20vw;
-  padding: 10px 20px;
-}
-
-.main p, address {
-  background-color: #c9bf8f;
-  opacity: 0.75;
-  margin: 0;
-  padding: 20px 20px 0px 20px;
-  text-align: justify;
-}
-
-#contact p, div {
-  text-align: center;
-}
-
-address {
-  text-align: center;
-}
-
 .section-bg {
   max-width: 100vw;
   height: 756px;
   background-position: center;
   background-size: cover;
-  margin: 0px auto 10vh;
+  margin: 0px auto 5vh;
   display: block;
 }
 
@@ -303,14 +390,16 @@ address {
 }
 
 #home .section-bg {
-  margin: 0 auto 6em;
   position: relative;
   text-align: center;
 }
 
-/* about  */
 /* team */
 #team .container {
+  display: none;
+}
+
+#team .main {
   display: none;
 }
 
@@ -329,76 +418,5 @@ address {
 
 .team-memb-story {
   text-align: right;
-}
-
-/* photogallery  */
-#photogallery {
-  background-image: url(../img/kubraktylem.jpg);
-}
-
-#photogallery a {
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-  font-stretch: extra-expanded;
-  margin-bottom: calc(10px + 0.2vw);
-  margin-left: calc(10px + 0.1vw);
-  margin-right: calc(10px + 0.1vw);
-  display: inline-block;
-  transition-property: color, transform;
-  transition-duration: .5s, 1.0s;
-  transition-delay: 0, 1s;
-}
-
-#photogallery a:hover {
-  transform: rotateX(360deg);
-}
-
-#photogallery span {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-#photogallery .main-child {
-  background-color: transparent;
-}
-
-.galfontS {
-  font-size: calc(10px + 1.8vw);
-}
-
-.galfontM {
-  font-size: calc(15px + 2.4vw);
-}
-
-.galfontL {
-  font-size: calc(20px + 3.0vw);
-}
-
-.galfontXL {
-  font-size: calc(25px + 4.0vw);
-}
-
-.gal-grupa {
-  font-size: calc(10px + 2.2vw);
-  font-weight: calc(100 * 0.2vw);
-  padding: 0;
-  margin-bottom: -1.4vw;
-}
-
-/* contact  */
-#contact {
-  background-image: url(../img/dwieparywpodskoku.jpg);
-}
-
-.social-media a {
-  font-size: 20px;
-  color: white;
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.social-media a :hover {
-  opacity: .6;
 }
 /*# sourceMappingURL=style.css.map */

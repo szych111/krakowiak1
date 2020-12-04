@@ -2,6 +2,7 @@
 @import 'photogal';
 @import 'colors';
 @import 'about';
+@import 'contact';
 
 @font-face {
   font-family: 'Museo Slab';
@@ -14,7 +15,7 @@ body {
   color: white;
   background-color: $base-grey;
   font-family: 'Museo Slab';
-  font-size: calc(10px + .6vw);
+  font-size: calc(10px + .5vw);
 }
 
 /* general styles */
@@ -23,12 +24,16 @@ body {
   flex-flow: column nowrap;
 }
 
+.main {
+  margin-top: 2vh;
+}
+
 .header {
   display: flex;
   flex-flow: row nowrap;
   flex-basis: 100%;
   align-items: flex-start;
-  padding: 0 3vw;
+  padding: 0 1.5vw 0 1vw;
 }
 
 .header-child {
@@ -59,33 +64,12 @@ h2 {
   margin-bottom: -0.8em;
 }
 
-.main {
-  margin: 0 5vw 10vh 20vw;
-  padding: 10px 20px;
-}
-
-.main p, address {
-  background-color: #c9bf8f;
-  opacity: 0.75;
-  margin: 0;
-  padding: 20px 20px 0px 20px;
-  text-align: justify;
-}
-
-#contact p, div {
-  text-align: center;
-}
-
-address {
-  text-align: center;
-}
-
 .section-bg {
   max-width: 100vw;
   height: 756px;
   background-position: center;
   background-size: cover;
-  margin: 0px auto 10vh;
+  margin: 0px auto 5vh;
   display: block;
 }
 
@@ -107,6 +91,7 @@ address {
   justify-content: center;
   align-items: center;
   position: relative;
+  
 }
 
 .main-page {
@@ -136,17 +121,17 @@ address {
 }
 
 #home .section-bg {
-  margin: 0 auto 6em;
   position: relative;
   text-align: center;
 }
 
-/* about  */
-
-
 /* team */
 
 #team .container {
+  display: none;
+}
+
+#team .main {
   display: none;
 }
 
@@ -165,77 +150,6 @@ address {
 
 .team-memb-story {
   text-align: right;
-}
-
-/* photogallery  */
-#photogallery {
-  background-image: url(../img/kubraktylem.jpg);
-}
-
-#photogallery a {
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-  font-stretch: extra-expanded;
-  margin-bottom: calc(10px + 0.2vw); 
-  margin-left: calc(10px + 0.1vw);
-  margin-right: calc(10px + 0.1vw);
-  display: inline-block;
-  transition-property: color, transform;
-  transition-duration: .5s, 1.0s;
-  transition-delay: 0, 1s;
-}
-
-#photogallery a:hover {
-  transform: rotateX(360deg);
-}
-
-#photogallery span {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-#photogallery .main-child {
-  background-color: transparent;
-}
-
-.galfontS {
-  font-size: calc(10px + 1.8vw);
-}
-
-.galfontM {
-  font-size: calc(15px + 2.4vw);
-}
-
-.galfontL {
-  font-size: calc(20px + 3.0vw);
-}
-
-.galfontXL {
-  font-size: calc(25px + 4.0vw);
-}
-
-.gal-grupa {
-  font-size: calc(10px + 2.2vw);
-  font-weight: calc(100 * 0.2vw);
-  padding: 0;
-  margin-bottom: -1.4vw;
-}
-/* contact  */
-
-#contact {
-  background-image: url(../img/dwieparywpodskoku.jpg);
-}
-
-.social-media a {
-  font-size: 20px;
-  color: white;
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.social-media a :hover {
-  opacity: .6;
 }
 
 
