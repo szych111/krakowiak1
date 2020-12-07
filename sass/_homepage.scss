@@ -1,6 +1,15 @@
-.fa {
-    font-size: calc(25px + 1vw);
-    margin-top: 5px;
+.audio {
+    font-size: calc(12px + 1vw);
+    margin-top: 18px;
+    padding: 0 1vw;
+  }
+
+  .fa-volume-off {
+    text-decoration: none;
+  }
+
+  .audio-off {
+    display: none;
   }
   
   #home span {
@@ -15,7 +24,6 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    
   }
   
   .main-page {

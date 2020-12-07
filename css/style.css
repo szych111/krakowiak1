@@ -72,6 +72,20 @@ nav a:hover {
   background-repeat: no-repeat;
 }
 
+#photogal-goralskie {
+  background-image: url(../galeria/dances-special-features/ciupaga.png);
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+}
+
+#photogal-rzeszowskie {
+  background-image: url(../galeria/dances-special-features/rzeszowskie-haft.png);
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+
 .photogal-header {
   text-align: left;
   padding: 2vh;
@@ -275,9 +289,18 @@ address {
   transform: scale(1.1);
 }
 
-.fa {
-  font-size: calc(25px + 1vw);
-  margin-top: 5px;
+.audio {
+  font-size: calc(12px + 1vw);
+  margin-top: 18px;
+  padding: 0 1vw;
+}
+
+.fa-volume-off {
+  text-decoration: none;
+}
+
+.audio-off {
+  display: none;
 }
 
 #home span {
