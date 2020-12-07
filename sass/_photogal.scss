@@ -42,8 +42,12 @@
 }
 
 .photogal-about {
+    width: fit-content;
+    height: fit-content;
+    line-height: 1.5;
     flex: 1;
-    padding: 1vw 2vw;
+    padding: 2vw 3vw;
+    background-color: rgba($color: #bd1818, $alpha: .8);
 }
 
 .photogal-photos {
