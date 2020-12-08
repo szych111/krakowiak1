@@ -1,15 +1,16 @@
-#team .container {
-    display: none;
-  }
   
-  #team .main {
-    display: none;
+  
+  .team-main {
+    display: flex;
+    margin: -20vh 15vw 15vh 20vw;
+    columns: 2;
+    column-width: 20vw;
   }
   
   .team-member {
     background-color: rgba(134, 129, 129, 0.5);
     padding: 5px 15px 15px 1px;
-    margin-bottom: 15px;
+    margin: 15px;
   }
   
   .team-memb-img {

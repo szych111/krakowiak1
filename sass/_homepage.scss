@@ -1,15 +1,20 @@
+.audio-modal {
+  display: none;
+}
 .audio {
     font-size: calc(12px + 1vw);
     margin-top: 18px;
-    padding: 0 1vw;
+    margin: 1.8vh 2.5vw;
   }
 
-  .fa-volume-off {
-    text-decoration: none;
+  .volume-on {
+    width: 3%;
+    display: none
   }
 
-  .audio-off {
-    display: none;
+  .volume-off {
+    width: 2.5%;
+    
   }
   
   #home span {

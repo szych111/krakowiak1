@@ -1,4 +1,8 @@
 $(document).ready(function () {
+    $(document).on('load', function() {
+        $('#onloadModal').addClass('onloadModal-open');
+    })
+
     const $menu = $('.nav-menu-holder');
 
     $(document).mouseup(e => {
@@ -15,6 +19,28 @@ $(document).ready(function () {
     $('.main-menu-item').on('click', () => {
         $menu.toggleClass('nav-menu-open');
     });
+
+//     var audio = document.getElementById("myAudio");
+
+// $('#play-pause-button').on("click",function(){
+//   if($(this).hasClass('fa-play'))
+//    {
+//      $(this).removeClass('fa-play');
+//      $(this).addClass('fa-pause');
+//      audio.play();
+//    }
+//   else
+//    {
+//      $(this).removeClass('fa-pause');
+//      $(this).addClass('fa-play');
+//      audio.pause();
+//    }
+// });
+
+// audio.onended = function() {
+//      $("#play-pause-button").removeClass('fa-pause');
+//      $("#play-pause-button").addClass('fa-play');
+// };
         
         
     })

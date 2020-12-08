@@ -65,27 +65,6 @@ nav a:hover {
   cursor: pointer;
 }
 
-#photogal-krakowiak {
-  background-image: url(../img/peacock-feather.svg);
-  background-position: center;
-  background-size: 60%;
-  background-repeat: no-repeat;
-}
-
-#photogal-goralskie {
-  background-image: url(../galeria/dances-special-features/ciupaga.png);
-  background-position: center;
-  background-size: 40%;
-  background-repeat: no-repeat;
-}
-
-#photogal-rzeszowskie {
-  background-image: url(../galeria/dances-special-features/rzeszowskie-haft.png);
-  background-position: center;
-  background-size: 70%;
-  background-repeat: no-repeat;
-}
-
 .photogal-header {
   text-align: left;
   padding: 2vh;
@@ -112,12 +91,13 @@ nav a:hover {
   line-height: 1.5;
   flex: 1;
   padding: 2vw 3vw;
-  background-color: rgba(189, 24, 24, 0.8);
+  margin-left: 2vw;
+  background-color: rgba(201, 219, 120, 0.8);
 }
 
 .photogal-photos {
   flex: 2;
-  margin: 1%;
+  margin: -2vh 1vw;
   padding: 1vh 0;
   background-color: rgba(82, 80, 75, 0.8);
 }
@@ -280,10 +260,10 @@ address {
 }
 
 .social-media a {
-  font-size: calc(8px + .5vw);
+  font-size: calc(8px + 1vw);
   color: white;
   display: inline-block;
-  margin-right: 1.5vw;
+  margin-right: 1.2vw;
   margin-bottom: 2vh;
   transition: 3s;
 }
@@ -293,18 +273,23 @@ address {
   transform: scale(1.1);
 }
 
+.audio-modal {
+  display: none;
+}
+
 .audio {
   font-size: calc(12px + 1vw);
   margin-top: 18px;
-  padding: 0 1vw;
+  margin: 1.8vh 2.5vw;
 }
 
-.fa-volume-off {
-  text-decoration: none;
-}
-
-.audio-off {
+.volume-on {
+  width: 3%;
   display: none;
+}
+
+.volume-off {
+  width: 2.5%;
 }
 
 #home span {
@@ -352,18 +337,17 @@ address {
   text-align: center;
 }
 
-#team .container {
-  display: none;
-}
-
-#team .main {
-  display: none;
+.team-main {
+  display: flex;
+  margin: -20vh 15vw 15vh 20vw;
+  columns: 2;
+  column-width: 20vw;
 }
 
 .team-member {
   background-color: rgba(134, 129, 129, 0.5);
   padding: 5px 15px 15px 1px;
-  margin-bottom: 15px;
+  margin: 15px;
 }
 
 .team-memb-img {
@@ -463,7 +447,6 @@ body {
   top: 50%;
   width: auto;
   padding: 16px;
-  margin-top: -50px;
   color: white;
   font-weight: bold;
   font-size: 20px;
@@ -477,6 +460,10 @@ body {
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -522,6 +509,27 @@ img.hover-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+#photogal-krakowiak {
+  background-image: url(../img/peacock-feather.svg);
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+}
+
+#photogal-goralskie {
+  background-image: url(../galeria/dances-special-features/ciupaga.png);
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+}
+
+#photogal-rzeszowskie {
+  background-image: url(../galeria/dances-special-features/rzeszowskie-haft.png);
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+
 @font-face {
   font-family: 'Museo Slab';
   src: url(../fonts/Museo_Slab_500.otf);
@@ -536,7 +544,6 @@ body {
   font-size: clamp(10px, calc(10px + .5vw), 20px);
 }
 
-/* general styles */
 .container {
   display: flex;
   flex-flow: column nowrap;
@@ -588,5 +595,13 @@ h2 {
   background-size: cover;
   margin: 0px auto 5vh;
   display: block;
+}
+
+.subsection {
+  width: 100vw;
+  height: 756px;
+  background-color: #c9bf8f;
+  display: flex;
+  flex-direction: column;
 }
 /*# sourceMappingURL=style.css.map */
