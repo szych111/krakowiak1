@@ -5,6 +5,7 @@
 @import 'contact';
 @import 'homepage';
 @import 'team';
+@import 'history';
 @import 'photogal-modal';
 @import 'photogal-sub-bcg';
 
@@ -81,6 +82,23 @@ h2 {
   background-color: rgba($base-beige, $alpha: 1.0);
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.quotation-container {
+  margin: 10vh 30vw;
+  width: 30vw;
+}
+
+blockquote {
+  text-align: left;
+  font-size: clamp(20px, calc(20px + .5vw), 40px);
+  text-indent: 2vw;
+  line-height: 1.5;
+}
+
+.quotation-author {
+  text-align: right;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,7 @@
+#home {
+  background-image: url(../img/main-yellow.jpg);
+}
+
 .audio-modal {
   display: none;
 }
@@ -51,10 +55,6 @@
     font-stretch: expanded;
     font-weight: calc(600 * 1.5vw);
     margin-bottom: -2.2vw;
-  }
-  
-  #home {
-    background-image: url(../img/main-yellow.jpg);
   }
   
   #home .section-bg {

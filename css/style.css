@@ -273,6 +273,10 @@ address {
   transform: scale(1.1);
 }
 
+#home {
+  background-image: url(../img/main-yellow.jpg);
+}
+
 .audio-modal {
   display: none;
 }
@@ -328,26 +332,34 @@ address {
   margin-bottom: -2.2vw;
 }
 
-#home {
-  background-image: url(../img/main-yellow.jpg);
-}
-
 #home .section-bg {
   position: relative;
   text-align: center;
 }
 
 .team-main {
+  position: absolute;
+  top: 12vh;
+  right: 3.5vw;
+  left: 17vw;
   display: flex;
-  margin: -20vh 15vw 15vh 20vw;
-  columns: 2;
-  column-width: 20vw;
+  flex-direction: row;
+}
+
+.team-main hr {
+  margin: 20px 0;
+  border: dotted 3px white;
+}
+
+.team-member-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
 }
 
 .team-member {
   background-color: rgba(134, 129, 129, 0.5);
   padding: 5px 15px 15px 1px;
-  margin: 15px;
 }
 
 .team-memb-img {
@@ -359,6 +371,10 @@ address {
 
 .team-memb-story {
   text-align: right;
+}
+
+#history {
+  background-image: url(../img/nav-menu.jpg);
 }
 
 body {
@@ -603,5 +619,22 @@ h2 {
   background-color: #c9bf8f;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.quotation-container {
+  margin: 10vh 30vw;
+  width: 30vw;
+}
+
+blockquote {
+  text-align: left;
+  font-size: clamp(20px, calc(20px + .5vw), 40px);
+  text-indent: 2vw;
+  line-height: 1.5;
+}
+
+.quotation-author {
+  text-align: right;
 }
 /*# sourceMappingURL=style.css.map */
