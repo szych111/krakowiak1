@@ -563,7 +563,7 @@ img.hover-shadow {
 }
 
 .audio-modal-btn {
-  font-size: calc(12px + 1vw);
+  width: 5vw;
   margin-top: 18px;
   margin: 1.8vh 2.5vw;
   opacity: 1;
