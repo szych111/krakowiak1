@@ -564,6 +564,7 @@ img.hover-shadow {
 
 .audio-modal-btn {
   width: 5vw;
+  height: 5vw;
   margin-top: 18px;
   margin: 1.8vh 2.5vw;
   opacity: 1;
@@ -572,6 +573,7 @@ img.hover-shadow {
 
 .audio-main {
   width: 4.5vw;
+  height: 4.5vw;
   display: inline-block;
   padding: 2.4vh 1vw;
   margin: 0;
