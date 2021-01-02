@@ -8,6 +8,7 @@
 @import 'history';
 @import 'photogal-modal';
 @import 'photogal-sub-bcg';
+@import 'audio';
 
 @font-face {
   font-family: 'Museo Slab';
@@ -45,11 +46,6 @@ body {
   flex: 1;
 }
 
-.img-responsive {
-  width: calc(30px + 10vw);
-  height: auto;
-}
-
 .header-child1 {
   align-items: flex-start;
   justify-content: flex-start;
@@ -65,6 +61,11 @@ h2 {
   font-weight: 600;
   margin-top: 20px;
   margin-bottom: -0.8em;
+}
+
+.img-responsive {
+  width: calc(30px + 10vw);
+  height: auto;
 }
 
 .section-bg {
