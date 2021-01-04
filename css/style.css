@@ -24,7 +24,7 @@
   top: 0;
   bottom: 0;
   transition: 1.5s;
-  margin-left: -240px;
+  margin-left: -290px;
   vertical-align: baseline;
   position: fixed;
   z-index: 100;
@@ -37,9 +37,9 @@
 nav ul {
   list-style: none;
   text-align: right;
-  font-size: calc(18px + 1vw);
+  font-size: calc(10px + 1vw);
   font-weight: 800;
-  line-height: 2;
+  line-height: 2.52;
   background-color: #726943;
   padding: 5vh 1vw;
   top: 10%;
@@ -196,24 +196,6 @@ nav a:hover {
 
 .main-about {
   margin: 0;
-}
-
-.about-partners {
-  position: absolute;
-  bottom: 0;
-  background-color: white;
-  opacity: .8;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0 5vw;
-}
-
-.about-partners img {
-  opacity: .9;
-  width: calc(50% + 2.7vw);
-  vertical-align: middle;
-  padding: 1vw;
 }
 
 #about {
@@ -550,7 +532,7 @@ img.hover-shadow {
 }
 
 .audio-modal {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 1000;
   padding-top: 32vh;
@@ -598,6 +580,49 @@ img.hover-shadow {
 .audio-inactive {
   opacity: 0.6;
   cursor: default;
+}
+
+.partners {
+  margin: 7vh 3vw 7vh 1vw;
+  display: flex;
+  flex-direction: row;
+  padding: 1vh 0.8vw;
+}
+
+.partners .partners-logos {
+  display: flex;
+  flex: 2;
+  flex-direction: row;
+  padding: 0 2vw;
+}
+
+.partners .partners-col {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.partners img {
+  display: inline-block;
+  width: 15vw;
+  opacity: .79;
+  margin: 1vh 0.3vw;
+}
+
+.partners .founding {
+  flex: 3;
+  padding: 0.5vh 1vw;
+}
+
+.partners p {
+  text-align: left;
+  margin: 0.5vh;
+}
+
+h3 {
+  text-align: right;
+  font-size: calc(15px + 2vw);
+  margin: 0 1vw;
 }
 
 @font-face {
@@ -678,7 +703,7 @@ h2 {
 
 .quotation-container {
   margin: 10vh 30vw;
-  width: 30vw;
+  width: 40vw;
 }
 
 blockquote {

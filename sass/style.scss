@@ -1,14 +1,4 @@
-@import 'navigation';
-@import 'photogal';
-@import 'colors';
-@import 'about';
-@import 'contact';
-@import 'homepage';
-@import 'team';
-@import 'history';
-@import 'photogal-modal';
-@import 'photogal-sub-bcg';
-@import 'audio';
+@import 'imports';
 
 @font-face {
   font-family: 'Museo Slab';
@@ -88,7 +78,7 @@ h2 {
 
 .quotation-container {
   margin: 10vh 30vw;
-  width: 30vw;
+  width: 40vw;
 }
 
 blockquote {

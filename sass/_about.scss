@@ -30,24 +30,6 @@
   margin: 0
 }
 
-.about-partners {
-  position: absolute;
-  bottom: 0;
-  background-color: rgba(white,1);
-  opacity: .8;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0 5vw;
-  
-  img {
-    opacity: .9;
-      width: calc(50% + 2.7vw);
-      vertical-align: middle;
-      padding: 1vw;
-  }
-  }
-
 #about {
     background-image: url(../img/grupowe.jpg);
  
