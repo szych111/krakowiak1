@@ -537,9 +537,9 @@ img.hover-shadow {
 }
 
 #photogal-lubelskie {
-  background-image: url(../galeria/dances-special-features/lublin-hat.png);
+  background-image: url(../galeria/dances-special-features/Lub01.jpg);
   background-position: center;
-  background-size: 110%;
+  background-size: 40%;
   background-repeat: no-repeat;
 }
 
@@ -558,7 +558,7 @@ img.hover-shadow {
 
 .audio-modal-btn {
   width: 5vw;
-  height: 5vw;
+  height: 4vw;
   margin-top: 18px;
   margin: 1.8vh 2.5vw;
   opacity: 1;
