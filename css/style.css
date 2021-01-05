@@ -40,7 +40,7 @@ nav ul {
   font-size: calc(10px + 1vw);
   font-weight: 800;
   line-height: 2.52;
-  background-color: #726943;
+  background-color: rgba(78, 78, 61, 0.5);
   padding: 5vh 1vw;
   top: 10%;
   bottom: 10%;
@@ -189,7 +189,7 @@ nav a:hover {
 }
 
 .about-about p {
-  background-color: rgba(114, 105, 67, 0.8);
+  background-color: rgba(78, 78, 61, 0.8);
   margin: 0;
   padding: .5vw 1.5vw;
 }
@@ -233,13 +233,13 @@ nav a:hover {
 }
 
 .contact-main p {
-  background-color: rgba(114, 105, 67, 0.8);
+  background-color: rgba(78, 78, 61, 0.8);
   margin: 0;
   padding: 1vw 1.5vw;
 }
 
 address {
-  background-color: rgba(114, 105, 67, 0.8);
+  background-color: rgba(78, 78, 61, 0.8);
 }
 
 .social-media a {
@@ -303,9 +303,7 @@ address {
 
 .team-main {
   position: absolute;
-  top: 12vh;
-  right: 3.5vw;
-  left: 17vw;
+  margin: 7vw 5vw;
   display: flex;
   flex-direction: row;
 }
@@ -315,15 +313,22 @@ address {
   border: dotted 3px white;
 }
 
-.team-member-container {
+.team-col {
   display: flex;
   flex-direction: column;
   margin: 0 15px;
 }
 
-.team-member {
+.team-col p {
   background-color: rgba(134, 129, 129, 0.5);
-  padding: 5px 15px 15px 1px;
+  width: 70%;
+  text-align: left;
+  padding: 1vw;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: row;
 }
 
 .team-memb-img {
@@ -531,8 +536,15 @@ img.hover-shadow {
   background-repeat: no-repeat;
 }
 
+#photogal-lubelskie {
+  background-image: url(../galeria/dances-special-features/lublin-hat.png);
+  background-position: center;
+  background-size: 110%;
+  background-repeat: no-repeat;
+}
+
 .audio-modal {
-  display: none;
+  display: block;
   position: fixed;
   z-index: 1000;
   padding-top: 32vh;
@@ -695,7 +707,6 @@ h2 {
 .subsection {
   width: 100vw;
   height: 756px;
-  background-color: #726943;
   display: flex;
   flex-direction: column;
   position: relative;
