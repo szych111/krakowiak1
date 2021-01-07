@@ -6,12 +6,12 @@
   right: 0;
   bottom: 0;
   margin: 1vh;
-  opacity: 0.3;
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .sticky-arrow-up a {
   color: white;
-  cursor: pointer;
 }
 
 .sticky-arrow-up .fa-arrow-up {
@@ -40,7 +40,7 @@ nav ul {
   font-size: calc(10px + 1vw);
   font-weight: 800;
   line-height: 2.52;
-  background-color: rgba(78, 78, 61, 0.5);
+  background-color: rgba(136, 123, 50, 0.5);
   padding: 5vh 1vw;
   top: 10%;
   bottom: 10%;
@@ -189,7 +189,7 @@ nav a:hover {
 }
 
 .about-about p {
-  background-color: rgba(78, 78, 61, 0.8);
+  background-color: rgba(136, 123, 50, 0.8);
   margin: 0;
   padding: .5vw 1.5vw;
 }
@@ -233,13 +233,13 @@ nav a:hover {
 }
 
 .contact-main p {
-  background-color: rgba(78, 78, 61, 0.8);
+  background-color: rgba(136, 123, 50, 0.8);
   margin: 0;
   padding: 1vw 1.5vw;
 }
 
 address {
-  background-color: rgba(78, 78, 61, 0.8);
+  background-color: rgba(136, 123, 50, 0.8);
 }
 
 .social-media a {
@@ -264,6 +264,12 @@ address {
   font-size: calc(12px + 1vw);
   font-weight: 600;
   margin-top: 15px;
+}
+
+.self-made-burger {
+  width: 85px;
+  padding-left: 10px;
+  cursor: pointer;
 }
 
 .container-main {
@@ -557,30 +563,41 @@ img.hover-shadow {
 }
 
 .audio-modal-btn {
-  width: 5vw;
-  height: 4vw;
+  width: 8vw;
   margin-top: 18px;
   margin: 1.8vh 2.5vw;
   opacity: 1;
   cursor: pointer;
 }
 
-.audio-main {
-  width: 50%;
+.modal-audio-wrapper {
   display: inline-block;
-  padding: 2.4vh 1vw;
-  margin: 0;
+  flex-direction: row;
+  padding: 1vw;
+  text-align: center;
+  margin: auto;
   opacity: 1;
-  cursor: pointer;
+}
+
+.main-audio-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 1vw;
+  margin-right: 2vw;
+  opacity: 1;
 }
 
 .audio-main-on {
-  width: 3.8vw;
+  border-right: 3px solid white;
+  width: 45px;
+  padding-right: 12px;
+  cursor: pointer;
 }
 
 .audio-main-off {
-  width: 3.9vw;
-  margin-right: 2vw;
+  width: 45px;
+  padding-left: 10px;
+  cursor: pointer;
 }
 
 .audio-active {
@@ -593,47 +610,51 @@ img.hover-shadow {
   cursor: default;
 }
 
-.partners {
-  margin: 7vh 3vw 7vh 1vw;
+.subsection {
   display: flex;
   flex-direction: row;
   padding: 1vh 0.8vw;
+  height: 756px;
 }
 
-.partners .partners-logos {
+.partners {
+  margin: 8vh 3vw 7vh 1vw;
+}
+
+.subsection-col-wrapper {
   display: flex;
-  flex: 2;
+  flex: 4;
   flex-direction: row;
   padding: 0 2vw;
 }
 
-.partners .partners-col {
+.subsection-col {
   display: flex;
   flex: 1;
   flex-direction: column;
 }
 
-.partners img {
+img {
   display: inline-block;
   width: 15vw;
   opacity: .79;
   margin: 1vh 0.3vw;
 }
 
-.partners .founding {
+.founding {
   flex: 3;
   padding: 0.5vh 1vw;
-}
-
-.partners p {
-  text-align: left;
-  margin: 0.5vh;
 }
 
 h3 {
   text-align: right;
   font-size: calc(15px + 2vw);
   margin: 0 1vw;
+}
+
+p {
+  text-align: left;
+  margin: 0.5vh;
 }
 
 @font-face {
