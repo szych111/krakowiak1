@@ -5,19 +5,19 @@
     height: 756px;
 }
 
-.partners {
-    margin: 8vh 3vw 7vh 1vw;
-
+.middlesection {
+    margin: 10vh 1vw 7vh 1vw;
+    display: flex;
+    flex-direction: row;
 }
     
-.subsection-col-wrapper {
+.middlesection-col-wrapper {
     display: flex;
     flex: 4;
     flex-direction: row;
-    padding: 0 2vw;
 }
 
-.subsection-col {
+.middlesection-col {
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -30,9 +30,9 @@ img {
     margin: 1vh 0.3vw;
 }
 
-.founding {
-    flex: 3;
-    padding: 0.5vh 1vw;
+.middlesection-title {
+    flex: 2;
+    padding: 0.5vh;
 }
 
 h3 {
