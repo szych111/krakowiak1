@@ -1,26 +1,29 @@
-.subsection {
-    display: flex;
-    flex-direction: row;
-    padding: 1vh 0.8vw;
-    height: 756px;
-}
+// .subsection {
+//     display: flex;
+//     flex-direction: row;
+//     padding: 1vh 0.8vw;
+//     height: 756px;
+// }
 
 .middlesection {
     margin: 10vh 1vw 7vh 1vw;
     display: flex;
     flex-direction: row;
+
 }
     
-.middlesection-col-wrapper {
+.middlesection-col-wrapper-partners {
     display: flex;
     flex: 4;
     flex-direction: row;
+    padding: 0 9vw;
 }
 
 .middlesection-col {
     display: flex;
     flex: 1;
     flex-direction: column;
+    justify-content: center;
 }
     
 img {
