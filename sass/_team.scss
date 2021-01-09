@@ -24,17 +24,33 @@
 // }
 .middlesection-col-wrapper-team {
   display: flex;
-  flex: 4;
+  flex: 8;
   flex-direction: row;
   padding: 0 1vw;
+
+  p {
+    text-align: left;
+  }
 }
+
+.team-member {
+  display: flex;
+  align-items: flex-start;
+}
+
 .team-memb-img {
-  padding: 8px;
-  float: left;
+  flex: 1;
   transform: scale(0.7);
+  margin: -1vh 0;
 }
 
 .team-memb-story {
-  text-align: right;
+  flex: 3;
+}
+
+@media screen and (max-width: 800px) {
+  .middlesection-col-wrapper-team {
+    flex-wrap: wrap;
+  }
 }
  

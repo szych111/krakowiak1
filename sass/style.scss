@@ -76,8 +76,15 @@ h2 {
 }
 
 .quotation-container {
-  margin: 10vh 30vw;
+  margin: 10vh 20vw;
   width: 40vw;
+}
+
+@media screen and (max-width: 800px) {
+  .quotation-container {
+    margin: 10vh 20vw;
+    width: 60vw;
+  }
 }
 
 blockquote {

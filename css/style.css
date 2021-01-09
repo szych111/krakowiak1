@@ -321,19 +321,34 @@ address {
 
 .middlesection-col-wrapper-team {
   display: flex;
-  flex: 4;
+  flex: 8;
   flex-direction: row;
   padding: 0 1vw;
 }
 
+.middlesection-col-wrapper-team p {
+  text-align: left;
+}
+
+.team-member {
+  display: flex;
+  align-items: flex-start;
+}
+
 .team-memb-img {
-  padding: 8px;
-  float: left;
+  flex: 1;
   transform: scale(0.7);
+  margin: -1vh 0;
 }
 
 .team-memb-story {
-  text-align: right;
+  flex: 3;
+}
+
+@media screen and (max-width: 800px) {
+  .middlesection-col-wrapper-team {
+    flex-wrap: wrap;
+  }
 }
 
 #history {
@@ -538,7 +553,7 @@ img.hover-shadow {
 }
 
 .audio-modal {
-  display: none;
+  display: block;
   position: fixed;
   z-index: 1000;
   padding-top: 32vh;
@@ -570,7 +585,7 @@ img.hover-shadow {
 .main-audio-wrapper {
   display: flex;
   flex-direction: row;
-  padding: 1vw;
+  padding: .6vw 1vw;
   margin-right: 2vw;
   opacity: 1;
 }
@@ -636,7 +651,7 @@ h3 {
   margin: 0 1vw;
 }
 
-p {
+.middlesection-col-wrapper-partners p {
   text-align: left;
   margin: 0.5vh;
 }
@@ -717,8 +732,15 @@ h2 {
 }
 
 .quotation-container {
-  margin: 10vh 30vw;
+  margin: 10vh 20vw;
   width: 40vw;
+}
+
+@media screen and (max-width: 800px) {
+  .quotation-container {
+    margin: 10vh 20vw;
+    width: 60vw;
+  }
 }
 
 blockquote {
