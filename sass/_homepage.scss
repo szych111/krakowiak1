@@ -2,8 +2,8 @@
   background-image: url(../img/main-yellow.jpg);
 }
  
-  #home span {
-    font-size: calc(12px + 1vw);
+.main-lang-choice {
+    font-size: calc(10px + 1vw);
     font-weight: 600;
     margin-top: 15px;
   }
@@ -12,6 +12,12 @@
     width: 85px;
     padding-left: 10px;
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 350px) {
+    .self-made-burger {
+      width: 35px;
+    }
   }
   
   .container-main {

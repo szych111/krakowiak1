@@ -11,6 +11,17 @@
     flex-direction: row;
 
 }
+@media screen and (max-width: 440px) {
+    .middlesection {
+        margin: 27vh 1vw 7vh 1vw;
+        flex-direction: column;
+    }
+    h3 {
+        text-align: center;
+        font-size: calc(15px + 2vw);
+        margin: 0 1vw;
+    }
+  }
     
 .middlesection-col-wrapper-partners {
     display: flex;

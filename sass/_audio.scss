@@ -1,5 +1,5 @@
 .audio-modal {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 1000;
   padding-top: 32vh;
@@ -31,7 +31,7 @@
 .main-audio-wrapper {
   display: flex;
   flex-direction: row;
-  padding: .6vw 1vw;
+  padding: 0.8vh 1vw;
   margin-right: 2vw;
   opacity: 1;
 }
@@ -41,24 +41,29 @@
   width: 45px;
   padding-right: 12px;
   cursor: pointer;
+  transition: 2s;
 }
 
 .audio-main-off {
   width: 45px;
   padding-left: 10px;
   cursor: pointer;
+  transition: 1s;
 }
 
-.audio-active {
-  opacity: 1;
-  cursor: pointer;
+@media screen and (max-width: 800px) {
+  .audio-main-on {
+    border-right: 2px solid white;
+    width: 25px;
+    padding-right: 5px;
+  }
+  .audio-main-off {
+    width: 25px;
+    padding-left: 5px;
+  }
+  .main-audio-wrapper {
+    margin: 1.2vh;
+    padding: 1vw 1vw;
+  }
 }
-
-.audio-inactive {
-  opacity: 0.6;
-  cursor: default;
-}
-
-
-
 

@@ -171,6 +171,15 @@ nav a:hover {
   height: 756px;
 }
 
+@media screen and (max-width: 440px) {
+  .about-container {
+    height: 1000px;
+  }
+  #about {
+    background-image: none;
+  }
+}
+
 .about-about {
   position: absolute;
   top: 12vh;
@@ -260,8 +269,8 @@ address {
   background-image: url(../img/main-yellow.jpg);
 }
 
-#home span {
-  font-size: calc(12px + 1vw);
+.main-lang-choice {
+  font-size: calc(10px + 1vw);
   font-weight: 600;
   margin-top: 15px;
 }
@@ -270,6 +279,12 @@ address {
   width: 85px;
   padding-left: 10px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 350px) {
+  .self-made-burger {
+    width: 35px;
+  }
 }
 
 .container-main {
@@ -553,7 +568,7 @@ img.hover-shadow {
 }
 
 .audio-modal {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 1000;
   padding-top: 32vh;
@@ -585,7 +600,7 @@ img.hover-shadow {
 .main-audio-wrapper {
   display: flex;
   flex-direction: row;
-  padding: .6vw 1vw;
+  padding: 0.8vh 1vw;
   margin-right: 2vw;
   opacity: 1;
 }
@@ -595,28 +610,48 @@ img.hover-shadow {
   width: 45px;
   padding-right: 12px;
   cursor: pointer;
+  transition: 2s;
 }
 
 .audio-main-off {
   width: 45px;
   padding-left: 10px;
   cursor: pointer;
+  transition: 1s;
 }
 
-.audio-active {
-  opacity: 1;
-  cursor: pointer;
-}
-
-.audio-inactive {
-  opacity: 0.6;
-  cursor: default;
+@media screen and (max-width: 800px) {
+  .audio-main-on {
+    border-right: 2px solid white;
+    width: 25px;
+    padding-right: 5px;
+  }
+  .audio-main-off {
+    width: 25px;
+    padding-left: 5px;
+  }
+  .main-audio-wrapper {
+    margin: 1.2vh;
+    padding: 1vw 1vw;
+  }
 }
 
 .middlesection {
   margin: 10vh 1vw 7vh 1vw;
   display: flex;
   flex-direction: row;
+}
+
+@media screen and (max-width: 440px) {
+  .middlesection {
+    margin: 27vh 1vw 7vh 1vw;
+    flex-direction: column;
+  }
+  h3 {
+    text-align: center;
+    font-size: calc(15px + 2vw);
+    margin: 0 1vw;
+  }
 }
 
 .middlesection-col-wrapper-partners {
@@ -738,8 +773,8 @@ h2 {
 
 @media screen and (max-width: 800px) {
   .quotation-container {
-    margin: 10vh 20vw;
-    width: 60vw;
+    margin: 10vh 10vw;
+    width: 80vw;
   }
 }
 
