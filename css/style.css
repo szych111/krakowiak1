@@ -31,7 +31,7 @@
 }
 
 .nav-menu-open {
-  margin-left: -20px;
+  margin-left: -10px;
 }
 
 nav ul {
@@ -40,7 +40,7 @@ nav ul {
   font-size: calc(10px + 1vw);
   font-weight: 800;
   line-height: 2.52;
-  background-color: rgba(136, 123, 50, 0.5);
+  background-color: rgba(161, 173, 71, 0.5);
   padding: 5vh 1vw;
   top: 10%;
   bottom: 10%;
@@ -198,7 +198,7 @@ nav a:hover {
 }
 
 .about-about p {
-  background-color: rgba(136, 123, 50, 0.8);
+  background-color: rgba(161, 173, 71, 0.8);
   margin: 0;
   padding: .5vw 1.5vw;
 }
@@ -242,13 +242,13 @@ nav a:hover {
 }
 
 .contact-main p {
-  background-color: rgba(136, 123, 50, 0.8);
+  background-color: rgba(161, 173, 71, 0.8);
   margin: 0;
   padding: 1vw 1.5vw;
 }
 
 address {
-  background-color: rgba(136, 123, 50, 0.8);
+  background-color: rgba(161, 173, 71, 0.8);
 }
 
 .social-media a {
@@ -273,7 +273,17 @@ address {
   font-size: calc(10px + 1vw);
   font-weight: 600;
   margin-top: 12px;
+  transition: 2s;
+}
+
+.pol {
+  opacity: 0.2;
+  cursor: default;
+}
+
+.deu {
   opacity: 0.8;
+  cursor: pointer;
 }
 
 .self-made-burger {
@@ -570,7 +580,7 @@ img.hover-shadow {
 }
 
 .audio-modal {
-  display: none;
+  display: block;
   position: fixed;
   z-index: 1000;
   padding-top: 32vh;
@@ -633,8 +643,8 @@ img.hover-shadow {
     padding-left: 5px;
   }
   .main-audio-wrapper {
-    margin: 0.2vh 1.2vh;
-    padding: 1vw 1vw;
+    margin: 0.2vh 2vw;
+    padding: 1vw 2vw;
   }
 }
 
@@ -652,7 +662,7 @@ img.hover-shadow {
   h3 {
     text-align: center;
     font-size: calc(15px + 2vw);
-    margin: 0 1vw;
+    margin: 0vh 1vw;
   }
 }
 
@@ -685,7 +695,7 @@ img {
 h3 {
   text-align: right;
   font-size: calc(15px + 2vw);
-  margin: 0 1vw;
+  margin: 3vh 1vw;
 }
 
 .middlesection-col-wrapper-partners p {

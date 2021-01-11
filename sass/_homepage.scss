@@ -6,8 +6,18 @@
     font-size: calc(10px + 1vw);
     font-weight: 600;
     margin-top: 12px;
-    opacity: 0.8;
+    transition: 2s;
   }
+
+.pol {
+  opacity: 0.2;
+  cursor: default
+}
+
+.deu {
+  opacity: 0.8;
+  cursor: pointer
+}
 
   .self-made-burger {
     width: 85px;
