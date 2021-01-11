@@ -54,15 +54,15 @@
 @media screen and (max-width: 800px) {
   .audio-main-on {
     border-right: 2px solid white;
-    width: 25px;
+    width: 30px;
     padding-right: 5px;
   }
   .audio-main-off {
-    width: 25px;
+    width: 30px;
     padding-left: 5px;
   }
   .main-audio-wrapper {
-    margin: 1.2vh;
+    margin: 0.2vh 1.2vh;
     padding: 1vw 1vw;
   }
 }

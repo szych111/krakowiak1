@@ -5,18 +5,20 @@
 .main-lang-choice {
     font-size: calc(10px + 1vw);
     font-weight: 600;
-    margin-top: 15px;
+    margin-top: 12px;
+    opacity: 0.8;
   }
 
   .self-made-burger {
     width: 85px;
-    padding-left: 10px;
+    padding: 5px 10px;
     cursor: pointer;
+    transition: 2s;
   }
 
   @media screen and (max-width: 350px) {
     .self-made-burger {
-      width: 35px;
+      width: 55px;
     }
   }
   

@@ -272,18 +272,20 @@ address {
 .main-lang-choice {
   font-size: calc(10px + 1vw);
   font-weight: 600;
-  margin-top: 15px;
+  margin-top: 12px;
+  opacity: 0.8;
 }
 
 .self-made-burger {
   width: 85px;
-  padding-left: 10px;
+  padding: 5px 10px;
   cursor: pointer;
+  transition: 2s;
 }
 
 @media screen and (max-width: 350px) {
   .self-made-burger {
-    width: 35px;
+    width: 55px;
   }
 }
 
@@ -623,15 +625,15 @@ img.hover-shadow {
 @media screen and (max-width: 800px) {
   .audio-main-on {
     border-right: 2px solid white;
-    width: 25px;
+    width: 30px;
     padding-right: 5px;
   }
   .audio-main-off {
-    width: 25px;
+    width: 30px;
     padding-left: 5px;
   }
   .main-audio-wrapper {
-    margin: 1.2vh;
+    margin: 0.2vh 1.2vh;
     padding: 1vw 1vw;
   }
 }
@@ -719,6 +721,7 @@ body {
   flex-flow: row nowrap;
   flex-basis: 100%;
   align-items: flex-start;
+  justify-content: space-between;
   padding: 0 1.5vw 0 1.5vw;
 }
 
@@ -733,6 +736,7 @@ body {
 }
 
 .header-child2 {
+  display: flex;
   align-items: flex-start;
   justify-content: flex-end;
 }
