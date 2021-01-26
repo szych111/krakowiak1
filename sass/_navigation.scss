@@ -1,7 +1,7 @@
 @import 'colors';
 
 .sticky-arrow-up {
-    border: 2px solid white;
+    box-shadow: 0 0 0 .2em rgba(white, 0.8);
     border-radius: 50%;
     width: min-content;
     position: fixed;
@@ -13,7 +13,6 @@
 
     a {
         color: white;
-        
     }
 
     .fa-arrow-up {
