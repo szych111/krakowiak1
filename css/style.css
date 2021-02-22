@@ -180,31 +180,30 @@ nav a:hover {
   }
 }
 
-.about-about {
-  position: absolute;
-  top: 12vh;
-  right: 3.5vw;
-  left: 17vw;
-  columns: 2;
-  column-width: 250px;
-}
-
-.about-about p:first-child {
-  padding-top: 1.5vh;
-}
-
-.about-about p:last-child {
-  padding-bottom: 1.5vh;
-}
-
-.about-about p {
-  background-color: rgba(155, 155, 117, 0.8);
-  margin: 0;
-  padding: .5vw 1.5vw;
+.about-col {
+  background: rgba(155, 155, 117, 0.8);
+  width: 80vw;
+  margin: 0 auto;
 }
 
 .main-about {
   margin: 0;
+}
+
+@media (min-width: 650px) {
+  .main-about {
+    display: flex;
+    margin: 0 5vw;
+  }
+  .about-col {
+    margin: 0 2vw;
+  }
+  .about-col :last-child {
+    margin-bottom: 2.2vh;
+  }
+  .about-col :first-child {
+    margin-top: 2vh;
+  }
 }
 
 #about {
@@ -580,7 +579,7 @@ img.hover-shadow {
 }
 
 .audio-modal {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 1000;
   padding-top: 32vh;
@@ -715,6 +714,10 @@ body {
   background-color: #52504b;
   font-family: 'Museo Slab';
   font-size: clamp(10px, calc(10px + .5vw), 20px);
+}
+
+section {
+  min-height: 100vh;
 }
 
 .container {
