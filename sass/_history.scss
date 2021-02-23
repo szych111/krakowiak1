@@ -1,14 +1,16 @@
 #history {
     background-image: url(../img/nav-menu.jpg);
+    position: relative;
   }
 
-  .history-details {
+  .main-history-child {
+    display: flex;
+    flex-wrap: wrap;
 
     p {
-      padding: none;
+      display: inline-block;
+      padding: 0 0.5em;
       font-size: clamp(8px, calc(8px + .5vw), 16px);
-      margin: none;
-      display: inline;
     }
   }
 
@@ -16,10 +18,27 @@
     margin-left: 0;
   }
 
+  p.history-details {
+    display: none;
+  }
+
   .hist-item {
-    margin: auto 15px;
+    margin: 1rem;
+    background: rgba(tomato, 0.7);
+    border-radius: 50%;
+    width: fit-content;
   }
-  .hist-item:hover {
-    background-color: rgb(189, 123, 96);
-    cursor: pointer;
+
+$hist-modal-size: 38vw; 
+
+  .history-modal {
+    position: absolute;
+    z-index: 100000;
+    top: 1vh;
+    left: 15vw;
+    width: $hist-modal-size;
+    height: $hist-modal-size;
+    background: crimson;
+    border-radius: 50%;
   }
+  

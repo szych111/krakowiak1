@@ -1,58 +1,22 @@
-.about-container {
-  position: relative;
-  height: 756px;
+.wrapper {
+  position: absolute;
+  margin: -4vh 5vw 0 19vw
 }
 
-@media screen and (max-width: 440px) {
-  .about-container {
-    height: 1000px;
-  }
-  #about {
-    background-image: none;
-  }
-}
-
-.about-col {
+.col {
   background: rgba($base-beige, .8);
-  width: 80vw;
+  max-width: 80vw;
   margin: 0 auto;
-}
-
-// .about-about {
-//   position: absolute;
-//   top: 12vh;
-//   right: 3.5vw;
-//   left: 17vw;
-//   columns: 2;
-//   column-width: 250px;
-
-//   p:first-child {
-//     padding-top: 1.5vh;
-//   }
-  
-//   p:last-child {
-//     padding-bottom: 1.5vh;
-//   }
-
-//   p {
-//     background-color: rgba($base-beige, 0.8);
-//     margin: 0;
-//     padding: .5vw 1.5vw;
-//   }
-// }
-
-.main-about {
-  margin: 0;
+  padding: 0.5em 2em 0;
 }
 
 @media (min-width: 650px) {
-  .main-about {
+  .flex-wrapper {
     display: flex;
-    margin: 0 5vw;
   }
 
-  .about-col {
-    margin: 0 2vw;
+  .col {
+    margin: 0 2vh;
 
     :last-child {
       margin-bottom: 2.2vh;
@@ -66,11 +30,5 @@
 
 #about {
     background-image: url(../img/grupowe.jpg);
- 
   }
-  
-  .open {
-    display: inline;
-  }
-  
   

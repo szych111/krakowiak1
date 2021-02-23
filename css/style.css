@@ -166,52 +166,35 @@ nav a:hover {
   margin-bottom: -1.4vw;
 }
 
-.about-container {
-  position: relative;
-  height: 756px;
+.wrapper {
+  position: absolute;
+  margin: -4vh 5vw 0 19vw;
 }
 
-@media screen and (max-width: 440px) {
-  .about-container {
-    height: 1000px;
-  }
-  #about {
-    background-image: none;
-  }
-}
-
-.about-col {
+.col {
   background: rgba(155, 155, 117, 0.8);
-  width: 80vw;
+  max-width: 80vw;
   margin: 0 auto;
-}
-
-.main-about {
-  margin: 0;
+  padding: 0.5em 2em 0;
 }
 
 @media (min-width: 650px) {
-  .main-about {
+  .flex-wrapper {
     display: flex;
-    margin: 0 5vw;
   }
-  .about-col {
-    margin: 0 2vw;
+  .col {
+    margin: 0 2vh;
   }
-  .about-col :last-child {
+  .col :last-child {
     margin-bottom: 2.2vh;
   }
-  .about-col :first-child {
+  .col :first-child {
     margin-top: 2vh;
   }
 }
 
 #about {
   background-image: url(../img/grupowe.jpg);
-}
-
-.open {
-  display: inline;
 }
 
 #contact {
@@ -379,26 +362,44 @@ address {
 
 #history {
   background-image: url(../img/nav-menu.jpg);
+  position: relative;
 }
 
-.history-details p {
-  padding: none;
+.main-history-child {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-history-child p {
+  display: inline-block;
+  padding: 0 0.5em;
   font-size: clamp(8px, calc(8px + .5vw), 16px);
-  margin: none;
-  display: inline;
 }
 
 .hist-par-date {
   margin-left: 0;
 }
 
-.hist-item {
-  margin: auto 15px;
+p.history-details {
+  display: none;
 }
 
-.hist-item:hover {
-  background-color: #bd7b60;
-  cursor: pointer;
+.hist-item {
+  margin: 1rem;
+  background: rgba(255, 99, 71, 0.7);
+  border-radius: 50%;
+  width: fit-content;
+}
+
+.history-modal {
+  position: absolute;
+  z-index: 100000;
+  top: 1vh;
+  left: 15vw;
+  width: 38vw;
+  height: 38vw;
+  background: crimson;
+  border-radius: 50%;
 }
 
 body {
@@ -711,13 +712,14 @@ body {
   margin: -2px -1px;
   text-align: center;
   color: white;
-  background-color: #52504b;
   font-family: 'Museo Slab';
   font-size: clamp(10px, calc(10px + .5vw), 20px);
 }
 
-section {
-  min-height: 100vh;
+.main-container {
+  width: 100%;
+  background-color: #52504b;
+  margin: 0 auto;
 }
 
 .container {
