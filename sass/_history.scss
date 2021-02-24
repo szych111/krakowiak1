@@ -27,18 +27,33 @@
     background: rgba(tomato, 0.7);
     border-radius: 50%;
     width: fit-content;
+    cursor: pointer;
+  }
+
+  .hist-item:hover, 
+  .hist-item:focus {
+    opacity: 0.7;
+    transform: scale(1.4);
+    transform: 2000ms;
   }
 
 $hist-modal-size: 38vw; 
 
   .history-modal {
+    display: none;
     position: absolute;
     z-index: 100000;
     top: 1vh;
     left: 15vw;
     width: $hist-modal-size;
     height: $hist-modal-size;
-    background: crimson;
+    background: rgba(243, 229, 210, .8);
     border-radius: 50%;
+    color: tomato;
+    justify-content: center;
+    align-items: center;
   }
-  
+
+  .history-modal--on {
+    display: flex;
+  }

@@ -20,27 +20,21 @@ $(document).ready(function () {
         $menu.toggleClass('nav-menu-open');
     });
 
-//     var audio = document.getElementById("myAudio");
+    //modal for history items//
+    
+    const $histModal = $('.history-modal')
 
-// $('#play-pause-button').on("click",function(){
-//   if($(this).hasClass('fa-play'))
-//    {
-//      $(this).removeClass('fa-play');
-//      $(this).addClass('fa-pause');
-//      audio.play();
-//    }
-//   else
-//    {
-//      $(this).removeClass('fa-pause');
-//      $(this).addClass('fa-play');
-//      audio.pause();
-//    }
-// });
+    $('.hist-item').on('click', () => {
+        $histModal.toggleClass('history-modal--on');
+    });
 
-// audio.onended = function() {
-//      $("#play-pause-button").removeClass('fa-pause');
-//      $("#play-pause-button").addClass('fa-play');
-// };
-        
+    $(document).mouseup(e => {
+        if(!$histModal.is(e.target)
+        && $histModal.has(e.target).length === 0) {
+            $histModal.removeClass('history-modal--on');
+        }
+    });
+
+    // -- // -- // -- //
         
     })

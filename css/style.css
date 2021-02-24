@@ -389,17 +389,33 @@ p.history-details {
   background: rgba(255, 99, 71, 0.7);
   border-radius: 50%;
   width: fit-content;
+  cursor: pointer;
+}
+
+.hist-item:hover,
+.hist-item:focus {
+  opacity: 0.7;
+  transform: scale(1.4);
+  transform: 2000ms;
 }
 
 .history-modal {
+  display: none;
   position: absolute;
   z-index: 100000;
   top: 1vh;
   left: 15vw;
   width: 38vw;
   height: 38vw;
-  background: crimson;
+  background: rgba(243, 229, 210, 0.8);
   border-radius: 50%;
+  color: tomato;
+  justify-content: center;
+  align-items: center;
+}
+
+.history-modal--on {
+  display: flex;
 }
 
 body {
