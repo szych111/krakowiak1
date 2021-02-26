@@ -22,22 +22,27 @@
     display: none;
   }
 
+  .history-details:hover {
+    display: inline;
+  }
+
   .hist-item {
     margin: 1rem;
-    background: rgba(tomato, 0.7);
-    border-radius: 50%;
-    width: fit-content;
+    // background: rgba(tomato, 0.7);
+    // border-radius: 50%;
+    // width: fit-content;
     cursor: pointer;
   }
 
   .hist-item:hover, 
   .hist-item:focus {
     opacity: 0.7;
-    transform: scale(1.4);
-    transform: 2000ms;
+    transition: 500ms;
   }
 
-$hist-modal-size: 38vw; 
+
+
+  $hist-modal-size: 38vw; 
 
   .history-modal {
     display: none;
@@ -57,3 +62,35 @@ $hist-modal-size: 38vw;
   .history-modal--on {
     display: flex;
   }
+
+  .hist-item[data-tool-tip]:hover {
+    cursor: pointer;
+}
+
+.hist-item[data-tool-tip] {
+    position: relative;
+}
+
+.hist-item[data-tool-tip]::after {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    color: white;
+    content: attr(data-tool-tip);
+    display: block;
+    background-color: rgba(177, 11, 11,.8);
+    padding: 3em;
+    border-radius: 50%;
+    bottom: -10vh;
+    left: -9.2vw;
+    white-space: wrap;
+    transform: scale(0);
+    transition: 
+        transform ease-in-out 250ms,
+        bottom ease-out 150ms;
+}
+
+.hist-item[data-tool-tip]:hover::after {
+    transform: scale(1);
+    bottom: 100%;
+}

@@ -1,34 +1,14 @@
-.wrapper {
-  position: absolute;
-  margin: -4vh 5vw 0 19vw
-}
-
-.col {
-  background: rgba($base-beige, .8);
-  max-width: 80vw;
-  margin: 0 auto;
-  padding: 0.5em 2em 0;
-}
-
-@media (min-width: 650px) {
-  .flex-wrapper {
-    display: flex;
-  }
-
-  .col {
-    margin: 0 2vh;
-
-    :last-child {
-      margin-bottom: 2.2vh;
-    }
-
-    :first-child {
-      margin-top: 2vh;
-    }
-  }
-}
-
 #about {
     background-image: url(../img/grupowe.jpg);
   }
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .hidden {
+    display: inline-block;
+  }
+}
   

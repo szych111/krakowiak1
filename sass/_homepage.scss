@@ -1,6 +1,10 @@
 #home {
   background-image: url(../img/main-yellow.jpg);
 }
+
+.header__right--home {
+  display: flex;
+}
  
 .main-lang-choice {
     font-size: calc(10px + 1vw);
