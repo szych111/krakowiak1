@@ -80,14 +80,16 @@ h1, h2, h3 {
 
 //middlesection //
 
-// .middlesection {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-// }
+.midsec__title {
+  background: indigo;
+  padding: .1em .5em;
+  text-align: right;
+  font-size: calc(12px + 1.5vw);
+}
 
-.middlesection__main {
-  margin: 0 auto;
+.midsec__main {
+  margin: 0 auto 15vh;
+  background: pink;
 }
 
 /// --- /// --- ///

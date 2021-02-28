@@ -307,7 +307,7 @@ address {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 40vw;
+  max-width: 100%;
   justify-content: space-around;
   align-items: flex-start;
   margin: 1vh;
@@ -333,10 +333,13 @@ address {
 }
 
 @media (min-width: 400px) {
-  .middlesection__main {
+  .midsec__main {
     display: flex;
   }
-  .team__left {
+  .midsec__col {
+    flex: 1;
+  }
+  .midsec__col + .midsec__col {
     margin-right: 2vh;
   }
 }
@@ -689,20 +692,6 @@ img.hover-shadow {
   margin: 1vh 0.3vw;
 }
 
-.middlesection-col {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.middlesection__title {
-  background: indigo;
-  padding: .1em .5em;
-  text-align: right;
-  font-size: calc(12px + 1.5vw);
-}
-
 @font-face {
   font-family: 'Museo Slab';
   src: url(../fonts/Museo_Slab_500.otf);
@@ -774,8 +763,16 @@ h1, h2, h3 {
   }
 }
 
-.middlesection__main {
-  margin: 0 auto;
+.midsec__title {
+  background: indigo;
+  padding: .1em .5em;
+  text-align: right;
+  font-size: calc(12px + 1.5vw);
+}
+
+.midsec__main {
+  margin: 0 auto 15vh;
+  background: pink;
 }
 
 .main-container {
