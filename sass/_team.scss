@@ -27,16 +27,5 @@
   flex: 3;
 }
 
-@media (min-width: 400px) {
-  .midsec__main {
-    display: flex;
-  }
 
-  .midsec__col {
-    flex: 1;
-  }
-  .midsec__col + .midsec__col {
-    margin-right: 2vh;
-  }
-}
  
