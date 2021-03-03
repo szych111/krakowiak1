@@ -58,6 +58,14 @@
     left: 17vw;
 }
 
+@media (min-width: 700px) {
+  .photogal-main-main {
+      top: 12vw;
+      right: 3.5vw;
+      left: 17vw;
+  }
+}
+
  a {
     text-decoration: none;
     color: white;
