@@ -43,7 +43,7 @@
   $hist-modal-size: 38vw; 
 
   .history-modal {
-    display: flex;
+    display: none;
     position: absolute;
     left: 32%;
     top: 25%;
@@ -55,6 +55,7 @@
     color: tomato;
     justify-content: center;
     align-items: center;
+    transition: 1000ms;
   }
 
   .history-modal--on {

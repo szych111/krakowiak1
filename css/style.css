@@ -366,7 +366,7 @@ p.history-details {
 }
 
 .history-modal {
-  display: flex;
+  display: none;
   position: absolute;
   left: 32%;
   top: 25%;
@@ -378,6 +378,7 @@ p.history-details {
   color: tomato;
   justify-content: center;
   align-items: center;
+  transition: 1000ms;
 }
 
 .history-modal--on {

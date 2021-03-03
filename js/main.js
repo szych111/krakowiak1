@@ -24,8 +24,10 @@ $(document).ready(function () {
     
     const $histModal = $('.history-modal')
 
-    $('.hist-item').on('click', () => {
+    $('.hist-item').on('click', (e) => {
         $histModal.toggleClass('history-modal--on');
+        console.log(e.target)
+        $histModal.text(e.target)
     });
 
     $(document).mouseup(e => {
@@ -34,6 +36,12 @@ $(document).ready(function () {
             $histModal.removeClass('history-modal--on');
         }
     });
+
+    // $( "*", document.body ).click(function( event ) {
+    //     event.stopPropagation();
+    //     let domElement = $( this ).get( 0 );
+    //     $histModal.text( "Clicked on - " + domElement.html );
+    //   });
 
     // -- // -- // -- //
         
