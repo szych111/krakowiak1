@@ -2,13 +2,52 @@
     background-image: url(../img/grupowe.jpg);
   }
 
-.hidden {
-  display: none;
+.section-wrapper {
+  padding: 1vh;
+  display: flex;
+  height: 756px;
 }
 
-@media (min-width: 600px) {
-  .hidden {
-    display: inline-block;
+.section__main {
+  // flex: 5;
+  display: flex;
+  align-content: space-between;
+  flex-direction: column;
+}
+
+.section__main__title {
+  margin-bottom: 1vw;
+  text-align: right;
+}
+
+.section__main__content {
+  padding: 1vw 1vh;
+  margin: 1vw 1em;
+
+  p {
+    background: rgba($base-beige,0.7);
+    margin: 0;
+    padding: 1vw 1.5vw 0;
+  }
+
+  p:first-child {
+    padding-top:2.0em;
+  }
+  
+  p:last-child {
+    padding-bottom: 2.0em;
   }
 }
-  
+
+@media (min-width: 900px) {
+  .section__main__content {
+    columns: 2;
+    column-width: 38%;
+    column-gap: 3%;
+    margin: 5vw 1em;
+  }
+
+  .section__main__content--gallery {
+    margin: 5vw 1em;
+  }
+}

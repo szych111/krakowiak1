@@ -2,9 +2,12 @@
   background-image: url(../img/main-yellow.jpg);
 }
 
-// .header__right--home {
-//   display: flex;
-// }
+.main__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3vh 2vh;
+}
  
 .main-lang-choice {
     font-size: calc(10px + 1vw);

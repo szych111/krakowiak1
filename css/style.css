@@ -113,26 +113,6 @@ nav a:hover {
   background-image: url(../img/kubraktylem.jpg);
 }
 
-#photogallery .photogal-main-container {
-  position: relative;
-  height: 756px;
-}
-
-#photogallery .photogal-main-main {
-  position: absolute;
-  top: 12vh;
-  right: 3.5vw;
-  left: 17vw;
-}
-
-@media (min-width: 700px) {
-  #photogallery .photogal-main-main {
-    top: 12vw;
-    right: 3.5vw;
-    left: 17vw;
-  }
-}
-
 #photogallery a {
   text-decoration: none;
   color: white;
@@ -178,13 +158,51 @@ nav a:hover {
   background-image: url(../img/grupowe.jpg);
 }
 
-.hidden {
-  display: none;
+.section-wrapper {
+  padding: 1vh;
+  display: flex;
+  height: 756px;
 }
 
-@media (min-width: 600px) {
-  .hidden {
-    display: inline-block;
+.section__main {
+  display: flex;
+  align-content: space-between;
+  flex-direction: column;
+}
+
+.section__main__title {
+  margin-bottom: 1vw;
+  text-align: right;
+}
+
+.section__main__content {
+  padding: 1vw 1vh;
+  margin: 1vw 1em;
+}
+
+.section__main__content p {
+  background: rgba(155, 155, 117, 0.7);
+  margin: 0;
+  padding: 1vw 1.5vw 0;
+}
+
+.section__main__content p:first-child {
+  padding-top: 2.0em;
+}
+
+.section__main__content p:last-child {
+  padding-bottom: 2.0em;
+}
+
+@media (min-width: 900px) {
+  .section__main__content {
+    columns: 2;
+    column-width: 38%;
+    column-gap: 3%;
+    margin: 5vw 1em;
+  }
+  .section__main__content--gallery {
+    margin: 5vw 1em;
   }
 }
 
@@ -212,6 +230,13 @@ address {
 
 #home {
   background-image: url(../img/main-yellow.jpg);
+}
+
+.main__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3vh 2vh;
 }
 
 .main-lang-choice {
@@ -543,7 +568,7 @@ img.hover-shadow {
 }
 
 .audio-modal {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 1000;
   padding-top: 32vh;
@@ -651,62 +676,18 @@ h2 {
   align-items: center;
 }
 
-.section__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 3vw;
-}
-
-.section__main {
-  position: relative;
-  height: 756px;
-}
-
-.section__main--small-content {
-  margin: -5vh 1vw 0 17vw;
-}
-
-.section__main--large-content {
-  margin: -15vh 2vw 0 15vw;
-}
-
-.main__content {
-  padding: 2em 2.2em;
-  max-width: 95%;
-  margin: 0 auto;
-}
-
-.main__content p {
-  background: rgba(155, 155, 117, 0.7);
-  margin: 0;
-  padding: 1vw 1.5vw 0;
-}
-
-.main__content p:first-child {
-  padding-top: 2.0em;
-}
-
-.main__content p:last-child {
-  padding-bottom: 2.0em;
-}
-
-@media (min-width: 850px) {
-  .main__content {
-    columns: 2;
-    column-width: 38%;
-    column-gap: 3%;
-  }
-  .section__main--small-content {
-    margin: -5vh 2vw 0 15vw;
-  }
-  .section__main--large-content {
-    margin: -20vh 2vw 0 15vw;
-  }
-}
-
 .midsec {
   margin: 10vw auto 7vw;
+}
+
+.midsec--partners {
+  margin-top: 40vh;
+}
+
+@media (min-width: 420px) {
+  .midsec--partners {
+    margin-top: 10vw;
+  }
 }
 
 .midsec__title {
@@ -717,10 +698,10 @@ h2 {
 
 .midsec__main {
   max-width: 1600px;
-  margin: 5vh auto 15vh;
+  margin: 3vh auto 12vh;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 430px) {
   .midsec__main {
     display: flex;
     padding: 4vh 3vw;
