@@ -66,7 +66,9 @@ nav a:hover {
 }
 
 .photogal-header {
-  text-align: left;
+  background-color: pink;
+  display: flex;
+  justify-content: space-between;
   padding: 2vh;
 }
 
@@ -76,24 +78,20 @@ nav a:hover {
 }
 
 .photogal-title {
-  text-align: left;
-  margin: 2vh;
-  float: right;
-  font-size: calc(30px + 2.2vw);
+  background-color: red;
+  margin-right: 0;
+  font-size: calc(15px + 2.2vw);
 }
 
 .photogal-container {
   display: flex;
+  flex-direction: column;
+  background-color: yellow;
 }
 
 .photogal-about {
-  width: fit-content;
-  height: fit-content;
-  line-height: 1.5;
-  flex: 1;
-  padding: 2vw 3vw;
-  margin-left: 2vw;
   background-color: rgba(179, 123, 50, 0.8);
+  padding: 1em;
 }
 
 .photogal-photos {
