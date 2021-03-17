@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <section id="photogal-krakowiak">
+    <section id="photogal-krakowiak" class="photogal-sub">
     <nav class="nav-menu-holder">
         <ul class="nav-menu-ul">
             <li class="main-menu-item"><a href="../../index.html#home">Home</a></li>
@@ -19,25 +19,15 @@
         </ul>
     </nav>
     <div class="photogal-header">
-        <img src="../../img/k-menu.png" alt="" class="photogal-menu-k nav-menu-button">
-        <h2 class="photogal-title">tańce krakowskie</h2>
+        <div class="photogal-menu-k nav-menu-button">
+          <img src="../../img/k-menu.png" alt="logo">
+        </div>
+        <div class="photogal-title">
+          <h3>tańce</h3>
+          <h3>krakowskie</h3>
+        </div>
     </div>
     <div class="photogal-container">
-        <div class="photogal-about">
-            <p>
-              Krakowiak to obok Poloneza, Mazura, Kujawiaka i Oberka jeden z pięciu polskich tańców narodowych.
-
-              Nazwa po raz pierwszy wymieniona w pamiętnikach Kitowicza w 1804 roku. Pierwsze muzyczne, rękopiśmienne zapisy Krakowiaka pochodzą ze źródeł końca XVIII w. a publikacje z zapisem nutowym z lat 1816, 1820.
-              
-              Pod koniec XVIII wieku charakterystyczne synkopowane rytmy krakowiaka pojawiły się w muzyce symfonicznej, a na początku XIX wieku taniec ten stał się popularny w muzyce scenicznej i instrumentalnej.
-              
-              Krakowiak – żywy i popularny taniec utrzymany w takcie 2/4, średnim tempie zawierający charakterystyczne synkopy, które przenoszą akcenty na słabe części taktu. Taniec ma wiele motywów i kroków tanecznych tańczonych w parach, albo oddzielnie tancerze i tancerki.
-              
-              Przed tańcem zawsze jeden z tancerzy przypłaca muzyce, śpiewa przyśpiewkę i zaczyna taniec. Podstawy krok taneczny to cwał. Inne ważne kroki w tańcu to hołubiec, Krzesany, Drobna kaszka, krok kulawy, Zapraszalny, Suwany, Przebiegany i Mijany.
-              
-              Najbardziej znany wśród polskich strojów ludowych, będący w świecie symbolem polskości to strój Krakowiaków zachodnich z okolicy Bronowic.
-            </p>
-        </div>
         <div class="photogal-photos">
             <img src="./img-krakowskie/dwieparywpodskoku-S.jpg" alt="taniec krakowski" class="photogal-photo hover-shadow cursor" onclick="openModal();currentSlide(1)">
             <img src="./img-krakowskie/dwieparywpodskoku-S.jpg" alt="taniec krakowski" class="photogal-photo hover-shadow cursor" onclick="openModal();currentSlide(1)">
@@ -45,6 +35,21 @@
             <img src="./img-krakowskie/dwieparywpodskoku-S.jpg" alt="taniec krakowski" class="photogal-photo hover-shadow cursor" onclick="openModal();currentSlide(1)">
 
         </div>
+        <div class="photogal-about">
+          <p>
+            Krakowiak to obok Poloneza, Mazura, Kujawiaka i Oberka jeden z pięciu polskich tańców narodowych.
+
+            Nazwa po raz pierwszy wymieniona w pamiętnikach Kitowicza w 1804 roku. Pierwsze muzyczne, rękopiśmienne zapisy Krakowiaka pochodzą ze źródeł końca XVIII w. a publikacje z zapisem nutowym z lat 1816, 1820.
+            
+            Pod koniec XVIII wieku charakterystyczne synkopowane rytmy krakowiaka pojawiły się w muzyce symfonicznej, a na początku XIX wieku taniec ten stał się popularny w muzyce scenicznej i instrumentalnej.
+            
+            Krakowiak – żywy i popularny taniec utrzymany w takcie 2/4, średnim tempie zawierający charakterystyczne synkopy, które przenoszą akcenty na słabe części taktu. Taniec ma wiele motywów i kroków tanecznych tańczonych w parach, albo oddzielnie tancerze i tancerki.
+            
+            Przed tańcem zawsze jeden z tancerzy przypłaca muzyce, śpiewa przyśpiewkę i zaczyna taniec. Podstawy krok taneczny to cwał. Inne ważne kroki w tańcu to hołubiec, Krzesany, Drobna kaszka, krok kulawy, Zapraszalny, Suwany, Przebiegany i Mijany.
+            
+            Najbardziej znany wśród polskich strojów ludowych, będący w świecie symbolem polskości to strój Krakowiaków zachodnich z okolicy Bronowic.
+          </p>
+      </div>
     </div>
     <div id="myModal" class="modal">
         <span class="close cursor" onclick="closeModal()">&times;</span>

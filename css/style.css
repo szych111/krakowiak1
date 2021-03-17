@@ -65,44 +65,72 @@ nav a:hover {
   cursor: pointer;
 }
 
+.photogal-sub {
+  background-color: rgba(82, 80, 75, 0.8);
+  height: 100vh;
+}
+
+.photogal-sub div {
+  margin: 1vh 0;
+}
+
 .photogal-header {
-  background-color: pink;
   display: flex;
   justify-content: space-between;
   padding: 2vh;
 }
 
 .photogal-menu-k {
-  width: 10vw;
-  margin: 1vw;
+  max-width: 20%;
+  flex: 1;
+}
+
+.photogal-menu-k img {
+  width: 100%;
 }
 
 .photogal-title {
-  background-color: red;
-  margin-right: 0;
-  font-size: calc(15px + 2.2vw);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-size: calc(12px + 2.1vw);
 }
 
 .photogal-container {
   display: flex;
   flex-direction: column;
-  background-color: yellow;
+  justify-content: center;
+}
+
+.photogal-container div {
+  margin: 1vw 3vw;
+}
+
+@media (min-width: 600px) {
+  .photogal-container {
+    flex-direction: row;
+  }
+  .photogal-photos {
+    order: 2;
+  }
 }
 
 .photogal-about {
   background-color: rgba(179, 123, 50, 0.8);
   padding: 1em;
+  margin: 15vw;
+  flex: 2;
 }
 
 .photogal-photos {
-  flex: 2;
-  margin: -2vh 1vw;
+  flex: 4;
   padding: 1vh 0;
   background-color: rgba(82, 80, 75, 0.8);
 }
 
 .photogal-photo {
-  width: 15vw;
+  width: 20vw;
   margin: 1%;
 }
 
@@ -157,7 +185,7 @@ nav a:hover {
 }
 
 .section-wrapper {
-  padding: 1vh;
+  padding: 1.5vw;
   display: flex;
   height: 756px;
 }
@@ -337,7 +365,6 @@ address {
 
 #history {
   background-image: url(../img/nav-menu.jpg);
-  position: relative;
 }
 
 .main-history-child {
@@ -346,52 +373,13 @@ address {
 }
 
 .main-history-child p {
-  display: inline-block;
-  padding: 0 0.5em;
   font-size: clamp(8px, calc(8px + .5vw), 16px);
-}
-
-.hist-par-date {
-  margin-left: 0;
-}
-
-p.history-details {
-  display: none;
-}
-
-.history-details:hover {
-  display: inline;
 }
 
 .hist-item {
   margin: 1rem;
+  display: inline;
   cursor: pointer;
-}
-
-.hist-item:hover,
-.hist-item:focus {
-  opacity: 0.7;
-  transition: 500ms;
-}
-
-.history-modal {
-  display: none;
-  position: absolute;
-  left: 32%;
-  top: 25%;
-  z-index: 10000;
-  width: 38vw;
-  height: 38vw;
-  background: rgba(243, 229, 210, 0.8);
-  border-radius: 50%;
-  color: tomato;
-  justify-content: center;
-  align-items: center;
-  transition: 1000ms;
-}
-
-.history-modal--on {
-  display: flex;
 }
 
 body {
