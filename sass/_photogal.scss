@@ -24,6 +24,12 @@
   }
 }
 
+@media (min-width: 800px) {
+  .photogal-menu-k {
+    max-width: 12%;
+  }
+}
+
 .photogal-title {
     display: flex;
     flex-direction: column;

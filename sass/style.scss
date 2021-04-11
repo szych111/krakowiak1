@@ -6,9 +6,13 @@
 }
 
 body {
+  scroll-behavior: smooth;
+}
+
+body {
   margin: -2px -1px;
   text-align: center;
-  color: white;
+  color: green;
   font-family: 'Museo Slab';
   font-size: clamp(10px, calc(10px + .5vw), 20px);
 }
@@ -167,5 +171,12 @@ blockquote {
 .quotation-author {
   text-align: right;
 }
+
+// footer //
+
+footer {
+  margin-bottom: 1em;
+}
+
 
 

@@ -89,6 +89,12 @@ nav a:hover {
   width: 100%;
 }
 
+@media (min-width: 800px) {
+  .photogal-menu-k {
+    max-width: 12%;
+  }
+}
+
 .photogal-title {
   display: flex;
   flex-direction: column;
@@ -428,6 +434,7 @@ body {
 
 /* Modal Content */
 .modal-content {
+  background-color: green;
   position: relative;
   margin: auto;
   padding: 0;
@@ -441,8 +448,9 @@ body {
   position: absolute;
   top: 10px;
   right: 25px;
-  font-size: 35px;
+  font-size: 25px;
   font-weight: bold;
+  z-index: 100;
 }
 
 .close:hover,
@@ -454,6 +462,7 @@ body {
 
 .mySlides {
   display: none;
+  background-color: red;
 }
 
 .cursor {
@@ -755,4 +764,9 @@ blockquote {
 .quotation-author {
   text-align: right;
 }
+
+footer {
+  margin-bottom: 10em;
+}
+
 /*# sourceMappingURL=style.css.map */
