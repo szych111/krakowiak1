@@ -569,7 +569,7 @@ img.hover-shadow {
 }
 
 .audio-modal {
-  display: none;
+  display: block;
   position: fixed;
   z-index: 1000;
   padding-top: 32vh;
@@ -654,6 +654,10 @@ img.hover-shadow {
 @font-face {
   font-family: 'Museo Slab';
   src: url(../fonts/Museo_Slab_500.otf);
+}
+
+body {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -749,7 +753,7 @@ h2 {
 }
 
 .quotation-container {
-  width: 80%;
+  width: 90%;
   max-width: 600px;
   margin: 10vh auto 15vh;
 }
@@ -766,7 +770,6 @@ blockquote {
 }
 
 footer {
-  margin-bottom: 10em;
+  margin-bottom: 1em;
 }
-
 /*# sourceMappingURL=style.css.map */
