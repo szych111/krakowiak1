@@ -2,12 +2,6 @@
     background-image: url(../img/grupowe.jpg);
   }
 
-// .section-about {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
-// }
-
 .about-content {
   display: flex;
   margin-bottom: auto;
@@ -31,6 +25,10 @@
 @media (max-width: 750px) {
   .about-content {
     flex-wrap: wrap;
+  }
+
+  .about-content > * + * {
+    margin-left: 0;
   }
 }
 

@@ -3,89 +3,83 @@
     // position: relative;
   }
 
-  .main-history-child {
+  .history-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: auto;
+    margin-top: auto;
+  }
+
+  .date-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba($base-beige, 0.8);
+    width: 80%;
+    padding: 3vw;
+  }
+
+@media (min-width: 800px) {
+  .date-description {
+    flex-direction: row;
+  }
+}
+
+  .history-content__date {
+    font-size: 10vw;
+  }
+
+  .history-content__img {
+    width: 80%;
+  }
+
+.history-beads {
+    margin: 5vw;
     display: flex;
     flex-wrap: wrap;
-
-    p {
-      font-size: clamp(8px, calc(8px + .5vw), 16px);
-    }
+    align-items: flex-end;
+    padding: 2vh;
   }
 
-  // .hist-par-date {
-  //   margin-left: 0;
-  // }
-
-  // p.history-details {
-  //   display: none;
-  // }
-
-  // .history-details:hover {
-  //   display: inline;
-  // }
-
-  .hist-item {
-    margin: 1rem;
-    display: inline;
-    cursor: pointer;
+p.history-details {
+    display: none;
   }
 
-  // .hist-item:hover, 
-  // .hist-item:focus {
-  //   opacity: 0.7;
-  //   transition: 500ms;
-  // }
+:root {
+  --bead-size: 3.5vmax;
+}
+  
+.hist-item {
+  width: var(--bead-size);
+  height: var(--bead-size);
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(var(--bead-size) * 0.3);
+  cursor: pointer;
+  transition: 1000ms;
+  }
 
-  // $hist-modal-size: 38vw; 
 
-  // .history-modal {
-  //   display: none;
-  //   position: absolute;
-  //   left: 32%;
-  //   top: 25%;
-  //   z-index: 10000;
-  //   width: $hist-modal-size;
-  //   height: $hist-modal-size;
-  //   background: rgba(243, 229, 210, .8);
-  //   border-radius: 50%;
-  //   color: tomato;
-  //   justify-content: center;
-  //   align-items: center;
-  //   transition: 1000ms;
-  // }
-
-  // .history-modal--on {
-  //   display: flex;
-  // }
-
-// .hist-item[data-tool-tip]:hover {
-//   cursor: pointer;
-// }
-
-// .hist-item[data-tool-tip] {
-//     position: relative;
-// }
-
-// .hist-item[data-tool-tip]::after {
-//     position: absolute;
-//     width: 250px;
-//     height: 250px;
-//     color: white;
-//     content: attr(data-tool-tip);
-//     display: block;
-//     background-color: rgba(177, 11, 11,.8);
-//     padding: 3em;
-//     border-radius: 50%;
-//     bottom: -10vh;
-//     left: -9.2vw;
-//     white-space: wrap;
-//     transform: scale(0);
-//     transition: 
-//         transform ease-in-out 250ms,
-//         bottom ease-out 150ms;
-// }
-
-// .hist-item[data-tool-tip]:hover::after {
-//     transform: scale(1);
-//     bottom: 100%;
-// }
+.hist-item:hover {
+  transform: rotate(45deg);
+}
+  
+  .string {
+      height: calc(var(--bead-size) * 0.5);
+      width: calc(var(--bead-size) * 0.1);
+      margin: 0 calc(var(--bead-size) * 0.05);
+      border-top: 1px solid red;
+      
+  }
+  
+  .hist-item, .string {
+      margin-bottom: calc(var(--bead-size) * 0.2);
+  }
+  
+  .string + .string {
+      margin-left: calc(var(--bead-size) * -0.05);
+  }
