@@ -21,6 +21,26 @@
   display: none;
 }
 
+.about-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba($base-grey, 0.9);
+  font-size: 0.6rem;
+  padding: 1.5rem 0.5rem;
+  display: none;
+}
+
+.read-less-btn {
+  position: absolute;
+  font-size: 1rem;
+  top: 0.5em;
+  right: 0.7em;
+  cursor: pointer;
+  transition: 1000ms;
+}
 
 @media (max-width: 750px) {
   .about-content {
@@ -37,14 +57,20 @@
     display: none;
   }
 
-  .about-read-more-btn {
+  .read-more-btn {
     display: block;
     text-align: right;
+    cursor: pointer;
+    padding: 0 1em 1em 0;
   }
 
   .about-content {
     display: grid;
     place-items: center;
-    
+  }
+
+  .about-modal-open {
+    display: block;
+    z-index: 4;
   }
 }

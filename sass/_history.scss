@@ -14,22 +14,13 @@
   padding: 3vh;
 }
 
-@media (min-width: 600px) {
-  .history--content {
-    flex-direction: row;
-  }
-
-  .history--content > * + * {
-    margin-right: 10vw;
-  }
-  
-}
-
 .history--quote {
   flex-basis: 40%;
   margin-left: auto;
   margin-top: auto;
   padding: 3vw 0;
+  display: none;
+
   p {
     color: rgba(white, 0.9);
     font-size: calc(15px + 1vw);
@@ -105,11 +96,25 @@ p.history-details {
   transition: 1000ms;
   }
 
-
 .hist-item:hover {
   transform: rotate(45deg);
 }
   
 .hist-item {
   margin-bottom: calc(var(--bead-size) * 0.2);
+}
+
+@media (min-width: 600px) {
+  .history--content {
+    flex-direction: row;
+  }
+
+  .history--content > * + * {
+    margin-right: 10vw;
+  }
+
+  .history--quote {
+    display: block;
+  }
+  
 }
