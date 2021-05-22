@@ -78,3 +78,22 @@ const history = [
         "Zespół Pieśni i Tańca Krakowiak świętuje 25 lecie, a na świecie wybucha pandemia Covid-19. Obchody jubileuszu odsuwają się w bliżej nieokreśloną przyszłość...",
     },
   ];
+
+  const histBeads = document.querySelector('.history-beads');
+
+  const cardDate = document.querySelector('.history--card__date');
+  const cardPart1 = document.querySelector('.history--card__part1');
+  const cardPart2 = document.querySelector('.history--card__part2');
+
+  histBeads.addEventListener('click', (e) => {
+    const text1 = e.target.dataset.toolTip1;
+    const text2 = e.target.dataset.toolTip2;
+    const date = e.target.innerText;
+    
+    cardDate.innerText = date;
+    cardPart1.innerText = text1;
+    if(text2) {
+      cardPart2.innerText = text2;
+    } else {cardPart2.innerText = ""}
+    
+  })
