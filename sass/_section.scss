@@ -2,6 +2,15 @@ section {
   position: relative;
 }
 
+.section-bg {
+  max-width: 100vw;
+  height: 756px;
+  background-position: center;
+  background-size: cover;
+  margin: 0px auto 8vmax;
+  display: block;
+}
+
 .section-wrapper {
   padding: 1.5vw;
   display: flex;

@@ -5,6 +5,7 @@
 
 .history-section {
   padding: 1.5vh;
+  margin-bottom: 7vh;
 }
 
 .history--content {
@@ -15,39 +16,24 @@
 }
 
 .history--quote {
-  flex-basis: 40%;
-  margin-left: auto;
-  margin-top: auto;
-  padding: 3vw 0;
   display: none;
-
-  p {
-    color: rgba(white, 0.9);
-    font-size: calc(15px + 1vw);
-    padding: 0 calc(2em + 0.9vw);
-  }
-}
-
-.history-quote-span {
-  font-size: 3em;
-}
-
-.history-quote-span:nth-child(1) {
-  padding-left: 1em;
 }
 
 .history--card {
-  flex-basis: 60%;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
-  max-width: 600px;
-  margin-right: auto;
-  border: 5px solid white;
+  flex-basis: 60%;
+  max-width: 550px;
+  height: 420px;
+  margin-right: 0 auto;
+  padding: 0 1em;
+  box-shadow: 5px 5px 10px 5px rgb(59, 58, 58);
 }
 
 .history--card__date {
-  font-size: 9vmax;
+  font-size: 5vmax;
   margin: 0.4em 0 0.25em;
 }
 
@@ -61,17 +47,15 @@
 }
 
 .history--card p {
-  margin: 1.5em;
-  font-size: calc(10px + 1vw);
+  font-size: calc(10px + 0.6vw);
   line-height: 1.5;
 }
 
 .history-beads {
-    margin: 5vw 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 2vh;
+    padding: 0 2vw 2vw;
   }
 
 p.history-details {
@@ -86,7 +70,6 @@ p.history-details {
   width: var(--bead-size);
   height: var(--bead-size);
   margin: 0 calc(var(--bead-size) * 0.1);
-  background-color: red;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -94,6 +77,7 @@ p.history-details {
   font-size: calc(var(--bead-size) * 0.3);
   cursor: pointer;
   transition: 1000ms;
+  background-color: red;
   }
 
 .hist-item:hover {
@@ -104,17 +88,40 @@ p.history-details {
   margin-bottom: calc(var(--bead-size) * 0.2);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .history--content {
     flex-direction: row;
+    justify-content: space-evenly;
   }
 
   .history--content > * + * {
     margin-right: 10vw;
   }
 
+  .history--card, .history--quote {
+    flex-basis: 100%;
+  }
+
+  .history--card {
+    height: 400px;
+  }
+
   .history--quote {
+    flex-basis: 40%;
+    max-width: 500px;
+    margin: auto 5vw;
     display: block;
+
+    p {
+      color: rgba(white, 0.9);
+      font-size: calc(15px + 0.8vw);
+      line-height: 1.5em;
+      padding: 0 calc(2em + 0.9vw);
+    }
+
+    span {
+      padding-left: 1em;
+    }
   }
   
 }

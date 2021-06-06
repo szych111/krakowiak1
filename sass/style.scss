@@ -6,15 +6,11 @@
 }
 
 body {
-  scroll-behavior: smooth;
-}
-
-body {
-  // margin: -2px -1px;
   text-align: center;
   color: white;
   font-family: 'Museo Slab';
   font-size: clamp(10px, calc(10px + .5vw), 20px);
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3 {
@@ -31,7 +27,6 @@ h2 {
 }
 
 main {
-  max-width: 1600px;
   width: 100%;
   background-color: $base-grey;
   margin: 0 auto;
@@ -40,19 +35,20 @@ main {
 //middlesection //
 
 .midsec {
-  margin: 2vw auto 2vw;
-}
-
-@media (min-width: 420px) {
-  .midsec--partners {
-    margin-top: 1vw;
-  }
+  margin: 0 auto 10vmax;
 }
 
 .midsec__title {
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
   font-size: calc(12px + 1.5vw);
   padding-right: 5vw;
+  margin-bottom: 3vmax;
+
+  h3 {
+    max-width: 40vw;
+    text-align: right;
+  }
 }
 
 .midsec__main {
@@ -71,12 +67,6 @@ main {
   }
 
 }
-
-/// --- /// --- ///
-
-// img {
-//   width: 100%;
-// }
 
 .container {
   display: flex;
@@ -99,19 +89,10 @@ h2 {
   height: auto;
 }
 
-.section-bg {
-  max-width: 100vw;
-  height: 756px;
-  background-position: center;
-  background-size: cover;
-  margin: 0px auto 5vh;
-  display: block;
-}
-
 .quotation-container {
   width: 90%;
   max-width: 600px;
-  margin: 10vh auto 15vh;
+  margin: 0 auto 10vmax;
 }
 
 blockquote {
