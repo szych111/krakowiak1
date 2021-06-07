@@ -11,6 +11,12 @@ section {
   display: block;
 }
 
+@media (min-width: 1200px) {
+  .section-bg {
+    padding-left: 10vw;
+  }
+}
+
 .section-wrapper {
   padding: 1.5vw;
   display: flex;

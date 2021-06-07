@@ -199,6 +199,7 @@ nav a:hover {
 
 .about-content > * {
   background-color: rgba(155, 155, 117, 0.8);
+  padding: 1em;
   flex-basis: 100%;
 }
 
@@ -224,7 +225,7 @@ nav a:hover {
 
 .read-less-btn {
   position: absolute;
-  font-size: 1rem;
+  font-size: 1.2rem;
   top: 0.5em;
   right: 0.7em;
   cursor: pointer;
@@ -262,14 +263,6 @@ nav a:hover {
 
 #contact {
   background-image: url(../img/dwieparywpodskoku.jpg);
-}
-
-address {
-  background-color: rgba(155, 155, 117, 0.8);
-}
-
-.social-media {
-  background-color: rgba(155, 155, 117, 0.8);
 }
 
 .social-media a {
@@ -782,6 +775,12 @@ section {
   background-size: cover;
   margin: 0px auto 8vmax;
   display: block;
+}
+
+@media (min-width: 1200px) {
+  .section-bg {
+    padding-left: 10vw;
+  }
 }
 
 .section-wrapper {

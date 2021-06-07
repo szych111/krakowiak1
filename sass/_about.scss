@@ -10,6 +10,7 @@
 
 .about-content > * {
   background-color: rgba($base-beige, 0.8);
+  padding: 1em;
   flex-basis: 100%;
 }
 
@@ -20,8 +21,6 @@
 .read-more-btn {
   display: none;
 }
-
-
 
 .about-modal {
   position: absolute;
@@ -37,7 +36,7 @@
 
 .read-less-btn {
   position: absolute;
-  font-size: 1rem;
+  font-size: 1.2rem;
   top: 0.5em;
   right: 0.7em;
   cursor: pointer;
