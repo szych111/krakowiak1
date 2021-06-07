@@ -77,7 +77,7 @@ p.history-details {
   font-size: calc(var(--bead-size) * 0.3);
   cursor: pointer;
   transition: 1000ms;
-  background-color: red;
+  background-color: $base-beige;
   }
 
 .hist-item:hover {

@@ -149,35 +149,19 @@ nav a:hover {
 #photogallery a {
   text-decoration: none;
   color: white;
+  font-size: calc(20px + 2.8vw);
   font-weight: 600;
   font-stretch: extra-expanded;
-  margin-bottom: calc(10px + 0.2vw);
-  margin-left: calc(10px + 0.1vw);
-  margin-right: calc(10px + 0.1vw);
+  margin-bottom: calc(12px + 0.2vw);
+  margin-left: calc(10px + 0.15vw);
+  margin-right: calc(10px + 0.15vw);
   display: inline-block;
-  transition-property: color, transform;
-  transition-duration: .5s, 1.0s;
-  transition-delay: 0, 1s;
+  transition-property: transform;
+  transition-duration: 800ms;
 }
 
 #photogallery a:hover {
   transform: rotateX(360deg);
-}
-
-.galfontS {
-  font-size: calc(10px + 1.8vw);
-}
-
-.galfontM {
-  font-size: calc(15px + 2.4vw);
-}
-
-.galfontL {
-  font-size: calc(20px + 3.0vw);
-}
-
-.galfontXL {
-  font-size: calc(25px + 4.0vw);
 }
 
 .gal-grupa {
@@ -205,6 +189,13 @@ nav a:hover {
 
 .about-content > * + * {
   margin-left: 1em;
+}
+
+.krakowiak-hand-written {
+  font-family: cortado, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4em;
 }
 
 .read-more-btn {
@@ -265,18 +256,33 @@ nav a:hover {
   background-image: url(../img/dwieparywpodskoku.jpg);
 }
 
-.social-media a {
-  font-size: calc(8px + 1vw);
-  color: white;
-  display: inline-block;
-  margin-right: 1.2vw;
-  margin-bottom: 2vh;
-  transition: 3s;
+.social-media {
+  display: flex;
+  margin: 0 auto 3vw;
 }
 
-.social-media a :hover {
-  opacity: .6;
+.social-media-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--bead-size);
+  height: var(--bead-size);
+  background-color: #9b9b75;
+  border-radius: 50%;
+  margin: 0 1.3vmin 0;
+  text-align: center;
+  font-size: calc(8px + 1.2vw);
+  cursor: pointer;
+  transition: 800ms;
+}
+
+.social-media-container a {
+  color: white;
+}
+
+.social-media-container:hover {
   transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 #home {
@@ -460,7 +466,7 @@ p.history-details {
   font-size: calc(var(--bead-size) * 0.3);
   cursor: pointer;
   transition: 1000ms;
-  background-color: red;
+  background-color: #9b9b75;
 }
 
 .hist-item:hover {
@@ -778,7 +784,7 @@ section {
 }
 
 @media (min-width: 1200px) {
-  .section-bg {
+  .section-bg:not(#home) {
     padding-left: 10vw;
   }
 }
