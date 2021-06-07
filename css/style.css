@@ -177,12 +177,11 @@ nav a:hover {
 
 .about-content {
   display: flex;
-  margin-bottom: auto;
-  margin-top: auto;
+  margin: auto 3vw;
 }
 
 .about-content > * {
-  background-color: rgba(155, 155, 117, 0.8);
+  background-color: rgba(155, 155, 117, 0.9);
   padding: 1em;
   flex-basis: 100%;
 }
@@ -283,6 +282,17 @@ nav a:hover {
 .social-media-container:hover {
   transform: scale(1.1);
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 750px) {
+  .contact-first {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .contact-second {
+    padding-top: 0;
+    margin-top: 0;
+  }
 }
 
 #home {

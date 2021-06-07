@@ -31,4 +31,16 @@
   background-color: rgba(black, 0.2);
 }
 
+@media (max-width: 750px) {
+  .contact-first {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .contact-second {
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
+
   

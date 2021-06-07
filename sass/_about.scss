@@ -4,12 +4,13 @@
 
 .about-content {
   display: flex;
-  margin-bottom: auto;
-  margin-top: auto;
+  // margin-bottom: auto;
+  // margin-top: auto;
+  margin: auto 3vw
 }
 
 .about-content > * {
-  background-color: rgba($base-beige, 0.8);
+  background-color: rgba($base-beige, 0.9);
   padding: 1em;
   flex-basis: 100%;
 }
