@@ -84,6 +84,7 @@ nav a:hover {
 .photogal-menu-k {
   max-width: 20%;
   flex: 1;
+  cursor: pointer;
 }
 
 .photogal-menu-k img {
@@ -114,7 +115,7 @@ nav a:hover {
   margin: 1vw 3vw;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .photogal-container {
     flex-direction: row;
   }

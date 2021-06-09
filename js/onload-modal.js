@@ -72,5 +72,12 @@ readLessBtn.addEventListener('click', () => {
   aboutModal.classList.remove('about-modal-open')
 })
 
-//--- history-beads ---//
+//--- sub-galleries menu ---//
+console.log('hello')
+const kBtnDorosli = document.getElementById('k-menu-dorosli')
+console.log(kBtnDorosli)
+const menuDorosli = document.getElementById('nav-menu-dorosli')
 
+kBtnDorosli.addEventListener('click', () => {
+  console.log('klik')
+})

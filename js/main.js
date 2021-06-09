@@ -1,6 +1,3 @@
-const date = document.getElementById('date')
-date.innerHTML = new Date().getFullYear()
-
 $(document).ready(function () {
     $(document).on('load', function() {
         $('#onloadModal').addClass('onloadModal-open');
@@ -22,6 +19,8 @@ $(document).ready(function () {
     $('.main-menu-item').on('click', () => {
         $menu.toggleClass('nav-menu-open');
     });
-
     
     })
+
+const date = document.getElementById('date')
+date.innerHTML = new Date().getFullYear();
