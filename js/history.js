@@ -96,4 +96,5 @@ const history = [
       cardPart2.innerText = text2;
     } else {cardPart2.innerText = ""}
     
+    
   })

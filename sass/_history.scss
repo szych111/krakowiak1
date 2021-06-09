@@ -22,13 +22,13 @@
 .history--card {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   flex-basis: 60%;
   max-width: 550px;
   height: 420px;
   margin-right: 0 auto;
-  padding: 0 1em;
+  padding: 1em;
   box-shadow: 5px 5px 10px 5px rgb(59, 58, 58);
 }
 

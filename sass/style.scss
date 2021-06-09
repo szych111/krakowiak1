@@ -106,10 +106,18 @@ blockquote {
   text-align: right;
 }
 
+.team-history-division {
+  width: 80vw;
+  height: 0.5vh;
+  background-color: $base-beige;
+  border-radius: 2px;
+  margin: 0 auto 7vh;
+}
+
 // footer //
 
 footer {
-  margin-bottom: 1em;
+  margin-bottom: 1vh;
 }
 
 
